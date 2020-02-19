@@ -190,7 +190,11 @@ button, input[type="submit"],.ux-btn {
   height: 500px; height: 100vh;
 }
 .ux-background-img {
-  background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size:cover; background-size:cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  background-size:cover;
+  border-radius: 10px;
 }
 .touchevents body[class*="Safari"] .ux-background-img {
   background-attachment: scroll;
@@ -1216,12 +1220,14 @@ body[class*="Safari"] .headding-with-bg.slider-headding {
 /* Isotope List */
 .grid-item {
   width: 100%; float: left;
+
 }
 .grid-item--width2 {
   width: 100%;
 }
 .grid-item-inside {
   overflow: hidden; position: relative;
+
 }
 .container-masonry .grid-item-inside {
   opacity: 0;
@@ -1258,6 +1264,7 @@ body[class*="Safari"] .headding-with-bg.slider-headding {
   -moz-transform:scale(1.3);
   -ms-transform:scale(1.3);
   transform:scale(1.3);
+
 }
 .grid-mask-boxed-left .grid-item-con:after,
 .grid-mask-boxed-center .grid-item-con:after {
@@ -1781,6 +1788,7 @@ a.rsswidget img {
 }
 .post-cover .ux-background-img {
   background-attachment: fixed;
+
 }
 .touchevents body[class*="Safari"] .post-cover .ux-background-img {
   background-attachment: scroll;
@@ -2801,7 +2809,7 @@ textarea {
 .shortcode-img {
    width: 100%;
    margin-top:16px;
-  
+
 }
 .fullwidth-img-wrap.shortcode-img-wrap,
 .fullwidth-img-wrap .shortcode-img {
