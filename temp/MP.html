@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title> A menu planning app </title>
+
+    <!--Meta-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/potato.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
+
+    <!-- Font Icon CSS -->
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
+
+    <!-- Owl Carousel Plugin CSS -->
+    <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
+
+    <!-- Lightbox Plugin CSS -->
+    <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
+
+    <!-- Lightbox Plugin Skin CSS -->
+    <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+    <!-- Air. Theme Elements CSS -->
+    <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
+
+    <!-- Air. Theme Main CSS -->
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+
+    <!-- IE hack -->
+    <!--[if lte IE 9]>
+    	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+    	<![endif]-->
+
+    <!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/ie.js"></script>
+    	<![endif]-->
+
+    <!--[if lte IE 8]>
+    	<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+    	<![endif]-->
+
+</head>
+
+<body class="page page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-show ux-bordered border20px bordery20px show-top-space page_from_top dark-logo header-sticky preload">
+
+    <!--Page Loader-->
+    <!-- <div class="page-loading fullscreen-wrap visible">
+        <div class="page-loading-inn">
+            <div class="page-loading-transform">
+                <div class="site-loading-logo">
+                    <img src="img/demo/logo-loading.png" alt="Air Theme" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Audio Player-->
+    <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+    <!--Main wrap-->
+    <div id="wrap-outer">
+
+        <!--Header-->
+        <header id="header" class="">
+
+            <div id="header-main">
+
+                <div class="container">
+
+                    <span id="navi-trigger">
+                        <span class="navi-trigger-text">
+                            <span class="navi-trigger-text-menu navi-trigger-text-inn">MENU</span>
+                            <span class="navi-trigger-text-close navi-trigger-text-inn">CLOSE</span>
+                        </span>
+                        <span class="navi-trigger-inn">
+                            <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
+                            <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
+                            <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
+                        </span>
+                    </span>
+
+                    <div class="heade-meta">
+                        <nav id="navi-header">
+                            <div id="navi_wrap" class="menu-menu-1-container">
+                                <ul class="menu clearfix">
+                                    <li class="external menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <!-- <li class="external menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="case-study.html">Case study</a>
+                                    </li>
+                                    <li class="external menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="page-contact.html">Contact</a>
+                                    </li> -->
+                                </ul>
+
+                            </div>
+                            <!--End #navi_wrap-->
+
+                        </nav>
+
+                    </div>
+
+                    <div class="navi-logo">
+
+                        <div class="logo-wrap">
+                            <div id="logo">
+                                <a class="logo-a" href="index.html" title="Air Theme">
+                                    <img class="logo-image logo-dark" src="img/logo.svg" />
+
+                                </a>
+                            </div>
+                        </div>
+                        <!--End logo wrap-->
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--End header main-->
+
+        </header>
+
+        <div id="menu-panel">
+
+            <div class="menu-panel-inn fullscreen-wrap">
+
+                <nav id="navi">
+
+                    <div id="navi-wrap" class="menu-navi-wrap">
+
+                        <ul class="menu clearfix">
+
+                            <li id="menu-item-256" class="menu-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <!-- <li id="menu-item-246" class="menu-item">
+                                <a href="page-news.html">News</a>
+                            </li>
+
+
+                            <li id="menu-item-247" class="menu-item">
+                                <a href="page-contact.html">Contact</a>
+                            </li> -->
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <div id="menu-panel-bottom" class="container-fluid">
+
+                    <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-3">
+
+                        <div class="search-top-btn-class">
+                            <span class="fa fa-search"></span>
+                            <form class="search_top_form" method="get" action="#">
+                                <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+                </div> <!--close menu-panel-bottom -->
+
+            </div>
+
+        </div>
+        <!--End #menu-panel-->
+
+
+        <!-- Main Content Wrap -->
+        <div id="wrap">
+          <!-- Main Content : List, text content ... -->
+        <div id="content">
+
+              <div class="content_wrap_outer fullwrap-layout">
+
+                  <div class="fullwrap-layout-inn">
+
+                      <div id="content_wrap">
+
+                          <article class="container post type-post format-standard">
+                            <div class="title-wrap container gallery-des-center">
+                              <h1 style="text-align: center;">Cartewheel</h1>
+                            </div>
+
+
+                            <div class="folio-section">
+
+
+
+
+                            <h3> A disruption to an old industry </h3>
+
+                            <p>
+                            In America, there’s the National School Lunch Program where every school kids gets free lunch. It is every meal planner’s challenge to make sure every day the school serves meals that is compliant, so that the school can get reimbursed from the government. Working a meal planner can be stressful, as it is a big job to ensure kids love their lunches and schools serves the meal according to the standard to get reimbursed.
+                            </p>
+
+                            <p> Currently meal planners work closely with dietician, using excel spreadsheet for calculation, to make sure all meals are compliance with USDA  standards and regulations.
+                            </p>
+                          </div>
+
+                          <div class="folio-section">
+                          <h3> My Role </h3>
+                          <p>
+                          I was the main designer in this project together with another designer, in a team of 3 front-end developers, 2 back-end developers, 1 BA/producer.
+                          My role as a product designer involves early stages research, rapid prototyping, workshop facilitation for story planning, information architecture, as well as building and maintaining a living component library.
+                          </p>
+                          </div>
+
+                          <div class="folio-section">
+
+                          <h3>Test often and early</h3>
+                          <p>
+                            Testing in early stage of the development cycle was so valuable as the results uncovered many aspected of the challenge that I didn’t consider at the first place. As our target users are not very tech-savvy, the first version of design was a bit overwhelming to them. I had to make sure the page is straight forward and let the user take one step at a time.
+                          </p>
+
+                        </div>
+
+                          <div class="folio-section">
+                          <h3>Agile and UX </h3>
+                          <p>Working on this project has given me a deep insight of how UX fits into the agile process. Every sprint we retro and improve our process.
+                            Gradually we no longer just race for the next sprint, but having a long term horizon envisiong how the prodcut will look like.
+                            Due to the timeline and complexity of this project, the team prioritised 'features' over 'pixel-perfect UI' for version 1. While that allowed design to continue working on the long term vision, I also worked on a UI overhaul in the background, based on upgrading current component library.
+
+
+                          </p>
+                        <img class="shortcode-img" src="./img/CW.png" alt="The cation of this image" />
+
+
+
+                        <h3> Cinema Friday </h3>
+                          <p>
+                        Getting the whole team to watch the user test gives them a sense of involvement and seeing how the product they built being used by real human was great! It also allows the team to receive direct feedback from the user and bring the whole team into the UX journey.
+                        </p>
+
+
+                        <h3> Design studio </h3>
+                        <p>
+                        Due to the complexity of this project, there are times the engineers spend long hours working on calculation and features to meet regulation. I would borrow an hour of everyone’s time once a week to involve the whole team in some design problems - such as doing a design studio of the 404 error page. Such activities bring the whole team’s creative mind together and everyone felt more energised after solving some fun design problems together.
+                      </p>
+                          </article>
+                      </div>
+
+                          <div class="container gallery-property">
+
+                              <ul class="gallery-info-property row">
+
+                                  <li class="gallery-info-property-li col-md-4 col-sm-4">
+                                      <h3 class="gallery-info-property-item gallery-info-property-tit">Link</h3>
+                                      <div class="gallery-info-property-item gallery-info-property-con"><a href="https://www.mycartewheel.com/" title="Landing page">Product landing page</a></div>
+                                  </li>
+                                  <li class="gallery-info-property-li col-md-4 col-sm-4">
+                                      <h3 class="gallery-info-property-item gallery-info-property-tit">Agency</h3>
+                                      <div class="gallery-info-property-item gallery-info-property-con">Two Bulls</div>
+                                  </li>
+                                  <!-- <li class="gallery-info-property-li col-md-4 col-sm-4">
+                                      <h3 class="gallery-info-property-item gallery-info-property-tit">Skills</h3>
+                                      <div class="gallery-info-property-item gallery-info-property-con">UI, UX, </div>
+                                  </li> -->
+                              </ul>
+
+                          </div><!--End gallery-property -->
+
+                      </div><!-- End #content_wrap-->
+
+
+
+                  </div><!--End sidebar-layout-->
+
+
+
+              </div><!-- End content_wrap_outer-->
+
+          </div><!--End #content-->
+
+          <footer id="footer" class="footer-cols-layout">
+
+              <div class="footer-info">
+                  <div class="footer-container">
+                      <div class="span6">
+                        <p>Handcrafted by Krijstelle </p>
+                      </div>
+                      <div class="span6">
+                        <p>2020 </p>
+                      </div>
+
+
+                  </div>
+              </div>
+
+              <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
+
+          </footer>
+
+
+        </div><!--End #wrap -->
+
+
+        </div><!--End wrap-outer-->
+
+
+
+        <!-- jQuery Library -->
+        <script type='text/javascript' src='js/library/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='js/main.min.js'></script>
+        <!-- Air. Theme Elements js -->
+        <script type='text/javascript' src='js/bm-shortcode.js'></script>
+        <!-- Air. Theme main js -->
+        <script type='text/javascript' src='js/custom.theme.js'></script>
+
+        </body>
+        </html>
