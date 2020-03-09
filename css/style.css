@@ -419,11 +419,17 @@ transition: opacity 250ms ease-in-out;
 
 /* Image Lazy */
 .ux-lazyload-wrap {
-  position: relative; display: block; background-color: #f0f0f0; border-radius: 20px
+  position: relative; display: block; background-color: #f0f0f0; border-radius: 16px
 }
+
+
+
 .ux-lazyload-img {
   position: absolute; left: 0; top: 0; max-width: 100%; width: 100%; height: auto;
 }
+
+
+
 .ux-lazyload-bgimg {
   position: absolute; left: -1px; right: -1px; bottom: -1px; top: -1px;
 }
@@ -1234,7 +1240,7 @@ body[class*="Safari"] .headding-with-bg.slider-headding {
 .grid-item-inside {
   overflow: hidden;
   position: relative;
-  border-radius: 20px;
+  border-radius: 16px;
   border: none;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
@@ -1247,8 +1253,6 @@ body[class*="Safari"] .headding-with-bg.slider-headding {
  transition:.3s;
  box-shadow: 0 15px 20px rgba(0,0,0,0.3);
 
- -webkit-transform: translateY(200px);
- transform: translateY(200px);
 }
 
 .container-masonry .grid-item-inside {
@@ -1274,7 +1278,12 @@ body[class*="Safari"] .headding-with-bg.slider-headding {
   display: inline-block; margin-bottom: 10px;
 }
 .masonry-list .ux-lazyload-wrap:after {
-  content: ''; position: absolute; z-index: -1; bottom: 0; right: 0; background-color: #f0f0f0;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  background-color: #f0f0f0;
 }
 .grid-item-con,
 .grid-item-con:after {
@@ -4788,3 +4797,7 @@ blockquote em, blockquote i, blockquote cite {
   9. Added by K
 
 -------------------------------------------------*/
+.section-header
+{
+  padding-top: 20px
+}
