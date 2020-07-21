@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/potato.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Krijstelle</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+    <!-- to-top-button start -->
+    <button type="button" class="backButton js-backButton">
+      <span class="backButton__bg"></span>
+      <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+    </button>
+    <!-- to-top-button end -->
+
+
+    <main class="">
+
+
+      <!-- header start -->
+      <header class="header -light -sticky-light js-header-light -classic js-header">
+        <!-- header__bar start -->
+        <div class="header__bar">
+          <div class="overflow-hidden">
+            <div class="header__logo js-header-logo">
+              <!-- <a data-barba href="index.html">
+                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
+              </a> -->
+              <a data-barba href="index.html">
+                <img class="" src="" height="" alt="logo">
+              </a>
+            </div>
+          </div>
+
+          <div class="navClassic-wrap js-header-menu-classic">
+            <ul class="navClassic-list js-navClassic-list">
+              <li>
+                <a data-barba href="index.html">
+                  Home
+                </a>
+                </li>
+
+                <li>
+
+                <a data-barba href="about.html">
+                  About
+                </a>
+                </li>
+
+                <!-- <li>
+                <a data-barba href="Projects.html">
+                  Projects  </a>
+              </li>
+
+              <li>
+              <a data-barba href="writing.html">
+                Writing
+              </a>
+            </li> -->
+
+            </ul>
+          </div>
+
+          <div class="header__menu__wrap overflow-hidden">
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- header__bar end -->
+
+
+        <!-- mobile nav start -->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg"></div>
+
+            <div class="nav__container">
+              <div class="nav__header">
+                <button type="button" class="nav-button-back js-nav-back">
+                  <i class="icon" data-feather="arrow-left-circle"></i>
+                </button>
+
+                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                  <i class="icon" data-feather="x"></i>
+                </button>
+              </div>
+
+              <div class="nav__content">
+                <div class="nav__content__left">
+                  <div class="navList__wrap">
+                    <ul class="navList js-navList">
+                      <li>
+                        <a data-barba href="index.html">
+                          Home </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="about.html">
+                          About </a>
+                      </li>
+
+                      <!-- <li>
+                        <a data-barba href="projects.html">
+                         Projects </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="writing.html">
+                         Writing </a>
+                      </li> -->
+
+
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
+
+
+      <!-- section start -->
+      <section class="masthead -type-work-1 sm:text-center js-masthead-type-work-1 js-shapes">
+        <!-- shapes start -->
+        <div class="masthead-shapes -group-4">
+          <div class="masthead-shapes__item -item-1">
+            <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- shapes end -->
+
+        <!-- masthead__content start -->
+        <div class="masthead__content">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-xl-9 col-sm-10 z-3">
+
+                  <h1 class="masthead__text text-6xl fw-600 js-title">
+                    Search alert optimisation
+                  </h1>
+
+                  <p class="masthead__subtitle text-lg sm:text-base mb-32 sm:mb-24 js-subtitle">
+                    How might we drive notifications to increase app launches?
+                  </p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- masthead__content end -->
+
+        <!-- container start -->
+        <div class="container-wide z-5 relative">
+          <div data-parallax="0.7" class="h-sm z-5 js-image">
+            <div data-parallax-target class="bg-image js-lazy" data-bg="img/alertop_heroimg.png"></div>
+          </div>
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+
+      <!-- section start -->
+      <section class="layout-pt-lg layout-pb-lg">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row justify-content-between">
+
+            <div class="col-auto">
+              <div class="d-flex text-xs tracking-md pt-4">
+                <p class="text-accent fw-600 mr-16">01.-</p>
+                <p class="uppercase fw-500">Background</p>
+              </div>
+            </div>
+
+
+            <div class="col-xl-7 col-lg-8">
+              <div class="md:mt-20">
+
+                <p class="text-lg text-black  sm:mt-16">
+                  Realcommercial is a marketplace for people to find commercial properties to buy or lease. The app provides people to search and save properties on the go.
+                  Being the No.1 app for commercial properties, the business takes app traffic seriously.
+                  'Time in app' and 'app launches' are two key metrics measured against the competitor.
+                 </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+      <!-- section start -->
+      <section class=" layout-pb-lg">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row justify-content-between">
+
+
+
+            <div class="col-xl-7 col-lg-8">
+              <div class="md:mt-20">
+
+                <div class="d-flex text-xs tracking-md pt-4">
+                  <p class="text-accent fw-600 mr-16">02.-</p>
+                  <p class="uppercase fw-500">The challenge</p>
+                </div>
+
+                <h2 class="text-2xl fw-600 mt-16">
+                  Increase app launches
+                </h2>
+                <p class="leading-5xl mt-16 sm:mt-16">
+                  As a team, we started to brainstorm what we could do to increase app traffic, specifically to increase app launches as a first step. </br>
+
+                  From previous testing sessions and analytics data, I found out users often use the recent searches feature to check back every week to see if there’s anything new.
+                  It saves  time to fire a new search. However some users didn’t notice the button. There is an opportunity there to encourage users setting search notifications that would lead to more app launches.
+                </p>
+
+
+                <h2 class="text-2xl fw-600 mt-32">
+                  Technical constraints
+                </h2>
+
+                <p class="leading-5xl mt-16 sm:mt-16">
+                  When thinking about driving notifications, ensure relevant notifications sent is the ideal way to go. However, due to some back-end migration work still yet to be done, there wasn't a lot customisation we could do, in terms personalised notifications.
+                </p>
+                <p> I proposed to the team to do a UI uplift to the notification call to action button as a first experiment. I workshopped with the team to came up with a few design options to weight up the pros and cons.</p>
+
+                <h2 class="text-2xl fw-600 mt-32 ">
+                  Hypotheses
+                </h2>
+
+                <p class="leading-5xl mt-16 sm:mt-16">
+                I also set up 2 hypotheses to measure the success of the change.</p>
+                <p class="leading-5xl fw-600 sm:mt-16">
+                1. If we update the set alert button UI, people are more likely to click on it because the current button is not visible to some users. </br>
+                2. More alerts would lead to more app launches and an increase on time in app.
+                 </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+
+
+      <!-- section start -->
+      <div>
+        <div data-parallax="0.7" class="h-80vh">
+          <div data-parallax-target class="bg-image js-lazy" data-bg="img/alertop_change.png"></div>
+        </div>
+      </div>
+      <!-- section end -->
+
+
+      <!-- section start -->
+      <section class="layout-pt-lg layout-pb-lg">
+        <div class="container">
+          <div class="row justify-content-between">
+
+            <div class="col-auto">
+              <div class="d-flex text-xs tracking-md pt-4">
+                <p class="text-accent fw-600 mr-16">03.-</p>
+                <p class="uppercase fw-500">The impact</p>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-8">
+              <div class="md:mt-20">
+                <h2 class="text-2xl fw-600">
+                  Early signs
+                </h2>
+                <p class="leading-5xl mt-24 sm:mt-16">
+                  The team implemented the UI change on iOS first and we saw a huge increase in notifications set.
+                  Even though December is usually a quiet month, the amount of alerts set was significant (pretty much double!).
+                  To make sure we’re not just getting more notifications in general, separating the context by screens in Mixpanel showed us the impact of the change on home screen.
+                </p>
+                <img src="img/alertop_iosdec.png" width="100%">
+
+                <h2 class="text-2xl fw-600 mt-64">
+                  Keep implementing, keep tracking
+                </h2>
+                <p class="leading-5xl mt-24 sm:mt-16">
+                  A month after seeing the positive impact on ios app, we also implemented on Android and saw good results. Even though during COVID-19 the usage dropped a bit, overall it was still much higher than last year.
+              </p>
+              <img src="img/alertop_androidfirst.png" width="100%">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+
+
+    <!-- section start -->
+    <section class=" layout-pb-lg">
+
+      <div class="container">
+
+
+          <img src="img/alertop_12months.png" width="100%">
+
+
+        <div class="row justify-content-between mt-64">
+
+          <div class="col-auto">
+            <div class="d-flex text-xs tracking-md ">
+              <p class="text-accent fw-600 mr-16">05.-</p>
+              <p class="uppercase fw-500">The outcome</p>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-8 ">
+            <div class="md:mt-20">
+              <h2 class="text-2xl fw-600 ">
+                25% increase on app launches YoY
+              </h2>
+              <p class="leading-5xl mt-24 sm:mt-16">
+                Not only the result validated the first hypothesis, we also saw a 25% increase on app launches compared to last year.
+                The team got a mention by the CEO during the company wide update!
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- section start -->
+      <section class="layout-pt-lg layout-pb-lg bg-dark-1">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row justify-content-between">
+            <div class="col-xl-7 col-lg-8">
+              <div class="d-flex text-xs tracking-md pt-4">
+                <p class="text-accent fw-600 mr-16">04.-</p>
+                <p class="uppercase fw-500 text-light">Looking ahead</p>
+              </div>
+
+              <h2 class="text-3xl fw-600 text-white mt-20">
+                Design vision
+              </h2>
+              <p class="text-lg text-white mt-24 sm:mt-16">
+                It was exciting to see the impact of UI uplift! It really motivated the team to see the impact of their work.
+
+                The change didn'ts stop here.
+              </p>
+
+
+              <p class="leading-5xl text-light mt-24 sm:mt-16">
+                I started looking at how we can actually support our users better with more personlised content as a product vision in order to drive even more app launches.
+
+                The idea is to serve relevant content based on user search behvaiour, and to suggest similar properties, similar suburbs to explore, and relevant tips in the commercial property market.
+              </p>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+      <!-- vision images section start -->
+      <div class="layout-pb-lg bg-dark-1">
+        <!-- container start -->
+        <div class="container">
+          <div class="fancy-grid -col-2">
+
+            <div class="fancy-grid__item">
+              <div data-parallax="0.8" class="ratio ratio-3:4">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="img/vision-1.gif"></div>
+              </div>
+              <p class="text-white"> Adding delight to the home screen with animated illustration and bringing the recent search card higher. </p>
+            </div>
+
+            <div class="fancy-grid__item">
+              <div data-parallax="0.8" class="ratio ratio-3:4">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="img/alertop_vision2.png"></div>
+              </div>
+              <p class="text-white"> Show suggested properties based on previous search and provide recently viewed properties in case user wants to revisit what they saw. </p>
+
+            </div>
+
+            <div class="fancy-grid__item">
+              <div data-parallax="0.8" class="ratio ratio-3:4">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="img/alertop_vision3.png"></div>
+              </div>
+              <p class="text-white"> Relevant commercial properties news & tips based on previous search. </p>
+
+            </div>
+
+            <div class="fancy-grid__item">
+              <div data-parallax="0.8" class="ratio ratio-3:4">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="img/alertop_vision4.png"></div>
+              </div>
+              <p class="text-white"> Suggest similar suburbs to expand the search range. </p>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- container end -->
+      </div>
+      <!-- section end -->
+
+
+
+
+      <!-- section start -->
+      <section class="projects-nav">
+        <!-- row start -->
+        <div class="row no-gutters">
+
+          <div class="col-lg-6">
+            <a data-barba href="28bsw.html" class="projects-nav__item -prev bg-dark-1">
+              <div class="projects-nav__img">
+                <!-- <div class="bg-image js-lazy" data-bg="img/projects/horizontal/6.jpg"></div> -->
+              </div>
+
+              <div class="projects-nav__content">
+                <div class="projects-nav__icon">
+                  <i class="size-xl str-width-xs text-white" data-feather="arrow-left-circle"></i>
+                </div>
+
+                <h3 class="text-4xl fw-400 tracking-none text-white">
+                  28 By Sam Wood
+                </h3>
+
+                <p class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase">
+                  PREV
+                </p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-6">
+            <a data-barba href="rca-dm.html" class="projects-nav__item -next bg-dark-1">
+              <div class="projects-nav__img">
+                <!-- <div class="bg-image js-lazy" data-bg="img/projects/horizontal/2.jpg"></div> -->
+              </div>
+
+              <div class="projects-nav__content">
+                <h3 class="text-4xl fw-400 tracking-none text-white">
+                  Dark mode
+                </h3>
+
+                <div class="projects-nav__icon">
+                  <i class="size-xl str-width-xs text-white" data-feather="arrow-right-circle"></i>
+                </div>
+
+                <p class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase">
+                  NEXT
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <!-- row end -->
+      </section>
+      <!-- section end -->
+
+
+      <!-- footer start -->
+      <footer class="footer -type-2 bg-white" id="contact">
+        <!-- container start -->
+        <div class="container">
+
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <p class="footer__text text-lg md:text-base">
+                Get in touch
+              </p>
+
+              <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
+                krijstellee@gmail.com
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
+              <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
+                <a href="https://twitter.com/notjustapotato">Twitter</a>
+                <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <div class="footer__copyright">
+                <p class="text-sm">
+                   Krijstelle @2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- shapes start -->
+          <div class="footer__shapes">
+            <div></div>
+            <div></div>
+          </div>
+          <!-- shapes end -->
+        </div>
+        <!-- container end -->
+      </footer>
+      <!-- footer end -->
+
+
+    </main>
+
+  </div>
+  <!-- barba container end -->
+
+
+  <!-- JavaScript -->
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

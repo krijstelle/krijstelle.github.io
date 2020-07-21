@@ -1,403 +1,543 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <title>Krijstelle L. </title>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Meta-->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="nofollow">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/potato.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/potato.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-
-
-    <!-- Bootstrap CSS -->
-    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
-
-    <!-- Font Icon CSS -->
-    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
-
-    <!-- Owl Carousel Plugin CSS -->
-    <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
-
-    <!-- Lightbox Plugin CSS -->
-    <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
-
-    <!-- Lightbox Plugin Skin CSS -->
-    <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
-
-    <!-- Air. Theme Elements CSS -->
-    <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
-
-    <!-- Air. Theme Main CSS -->
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
-
-    <!-- IE hack -->
-    <!--[if lte IE 9]>
-    	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
-    	<![endif]-->
-
-    <!--[if lte IE 9]>
-    	<script type="text/javascript" src="js/ie.js"></script>
-    	<![endif]-->
-
-    <!--[if lte IE 8]>
-    	<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
-    	<![endif]-->
-
+  <title>Krijstelle</title>
 </head>
 
-<body class="page page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-show ux-bordered border20px bordery20px show-top-space page_from_top dark-logo header-sticky preload">
+<body class="preloader-visible" data-barba="wrapper">
 
-    <!--Page Loader-->
-    <!-- <div class="page-loading fullscreen-wrap visible">
-        <div class="page-loading-inn">
-            <div class="page-loading-transform">
-                <div class="site-loading-logo">
-                    <img src="img/demo/logo-loading.png" alt="Air Theme" />
-                </div>
-            </div>
-        </div>
-    </div> -->
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
 
-    <!--Audio Player-->
-    <div id="jquery_jplayer" class="jp-jplayer"></div>
-
-    <!--Main wrap-->
-    <div id="wrap-outer">
-
-        <!--Header-->
-        <header id="header" class="">
-
-            <div id="header-main">
-
-                <div class="container">
-
-                    <span id="navi-trigger">
-                        <span class="navi-trigger-text">
-                            <span class="navi-trigger-text-menu navi-trigger-text-inn">MENU</span>
-                    <span class="navi-trigger-text-close navi-trigger-text-inn">CLOSE</span>
-                    </span>
-                    <span class="navi-trigger-inn">
-                            <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
-                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
-                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
-                    </span>
-                    </span>
-
-                    <div class="heade-meta">
-                        <nav id="navi-header">
-                            <div id="navi_wrap" class="menu-menu-1-container">
-                                <ul class="menu clearfix">
-
-                                    <li class="external menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="html/about.html">About</a>
-                                    </li>
-                                    <!-- <li class="external menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="html/case-study.html">Case study</a>
-                                    </li>
-                                    <li class="external menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="html/page-contact.html">Contact</a>
-                                    </li> -->
-                                </ul>
-
-                            </div>
-                            <!--End #navi_wrap-->
-
-                        </nav>
-
-                    </div>
-
-                    <div class="navi-logo">
-
-                        <div class="logo-wrap">
-                            <div id="logo">
-                                <a class="logo-a" href="html/index.html">
-
-                                    <img class="logo-image logo-dark" src="./img/logo.svg" />
-
-                                </a>
-                            </div>
-                        </div>
-                        <!--End logo wrap-->
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!--End header main-->
-
-        </header>
-
-        <div id="menu-panel">
-
-            <div class="menu-panel-inn fullscreen-wrap">
-
-                <nav id="navi">
-
-                    <div id="navi-wrap" class="menu-navi-wrap">
-
-                        <ul class="menu clearfix">
-
-
-                            <li id="menu-item-256" class="menu-item">
-                                <a href="html/about.html">About</a>
-                                <!-- <li id="menu-item-246" class="menu-item">
-                                    <a href="html/Work.html">Work</a>
-                                </li>
-                            </li>
-                            <li id="menu-item-247" class="menu-item">
-                                <a href="html/contact.html">Contact</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-
-        </div>
-        <!--End #menu-panel-->
-
-
-        <!-- Main Content Wrap -->
-        <div id="wrap">
-
-            <!-- Top Slider -->
-            <div class="top-slider top-slider-text">
-
-                <div class="text-slider-inn middle-ux">
-                    <h1 class="slider-headding slider-headding-1">Hello</h1>
-
-                    <div class="slider-con">
-                        <div class="slider-con-inn">
-                            <p> I'm Krijstelle. I'm a product designer. Welcome to my portfolio!</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- End top-slider -->
-
-            <!-- Main Content : List, text content ... -->
-            <div id="content">
-
-                <div class="content_wrap_outer fullwrap-layout">
-
-                    <div id="content_wrap" class="">
-
-
-                        <!-- Portfolio Template-->
-                        <div class="container-masonry ux-portfolio-spacing-40 ux-portfolio-2col container ux-has-filter filter-center" data-col="2" data-spacer="40" data-template="intro-above">
-
-
-                            <div class="masonry-list  grid-list grid-mask-filled-left grid-list-tit-shown ">
-
-                                <!--
-                          <div class="masonry-list   grid-list-tit-shown-center"> masonry-grid-->
-
-
-
-                          <!--RCA homepage-->
-                          <section class="grid-item">
-                              <div class="grid-item-inside" style="width:90%">
-                                  <a href="html/RCA-2.html" class="grid-item-mask-link grid-item-open-url"></a>
-                                  <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
-                                      <div class="ux-lazyload-bgimg ux-background-img" data-bg="./img/hp_thumbnail.png"></div>
-                                  </div>
-                              </div>
-
-                              <div class="grid-item-con-text-tit-shown">
-                                  <h2 class="grid-item-tit">RCA Homepage</h2>
-                                  <p> How might we balance the needs of our users and SEO?</p>
-                              </div>
-                          </section>
-
-
-
-
-                                <!--RCA nearby places-->
-                                <section class="grid-item">
-                                    <div class="grid-item-inside" style="width:90%">
-                                        <a href="html/RCA.html" class="grid-item-mask-link grid-item-open-url"></a>
-                                        <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
-                                            <div class="ux-lazyload-bgimg ux-background-img" data-bg="./img/nearby_thumbnail.png"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid-item-con-text-tit-shown">
-                                        <h2 class="grid-item-tit">Nearby places</h2>
-                                        <p> How might we help commercial property seekers to find out about the amenities nearby?</p>
-                                    </div>
-                                </section>
-
-
-
-                                <!--28-->
-                                <section class="grid-item">
-                                    <div class="grid-item-inside" style="width:90%">
-                                        <a href="html/SW.html" class="grid-item-mask-link grid-item-open-url"></a>
-                                        <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
-                                            <div class="ux-lazyload-bgimg ux-background-img" data-bg="./img/28bsw_thumbnail.png"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid-item-con-text-tit-shown">
-                                        <h2 class="grid-item-tit">28 By Sam Wood</h2>
-                                        <p> How might we make exercising and eating healthy a lifestyle?</p>
-                                    </div>
-                                </section>
-
-
-
-                                <!--cartewheel-->
-                                <section class="grid-item">
-                                    <div class="grid-item-inside" style="width:90%">
-                                        <a href="html/MP.html" class="grid-item-mask-link grid-item-open-url"></a>
-                                        <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
-                                            <div class="ux-lazyload-bgimg ux-background-img" data-bg="./img/cw_thumbnail.png"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid-item-con-text-tit-shown">
-                                        <h2 class="grid-item-tit">Cartewheel</h2>
-                                        <p> How might we make meal planners' job easier?</p>
-                                    </div>
-                                </section>
-
-
-
-                                <!--Global Village-->
-                                <section class="grid-item">
-                                    <div class="grid-item-inside" style="width:90%">
-                                        <a href="html/GV.html" class="grid-item-mask-link grid-item-open-url"></a>
-                                        <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
-                                            <div class="ux-lazyload-bgimg ux-background-img" data-bg="./img/gv_thumbnail.png"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid-item-con-text-tit-shown">
-                                        <h2 class="grid-item-tit">Global Village</h2>
-                                        <p> How might we connect people to share their life experience and support each other?</p>
-                                    </div>
-                                </section>
-
-
-                            </div>
-                            <!--End masonry-list-->
-
-                        </div>
-                        <!-- End container-masonry -->
-
-
-                    </div>
-                    <!-- End #content_wrap-->
-
-                </div>
-                <!-- End content_wrap_outer-->
-
-            </div>
-            <!--End #content-->
-
-            <footer id="footer" class="footer-cols-layout">
-
-                <div class="footer-info">
-                    <div class="footer-container">
-                        <div class="span6">
-                            <p>Handcrafted by Krijstelle </p>
-                        </div>
-                        <div class="span6">
-                            <p>2020 </p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="container-fluid back-top-wrap">
-                    <div id="back-top"></div>
-                </div>
-
-            </footer>
-
-        </div>
-        <!--End #wrap -->
-
-        <div class="video-overlay modal">
-            <span class="video-close"></span>
-        </div>
-        <!--end video-overlay-->
-
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
     </div>
-    <!--End wrap-outer-->
+  </div>
+  <!-- preloader end -->
 
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-        <div class="pswp__bg"></div>
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
 
-        <div class="pswp__scroll-wrap">
 
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+    <!-- to-top-button start -->
+    <button type="button" class="backButton js-backButton">
+      <span class="backButton__bg"></span>
+      <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+    </button>
+    <!-- to-top-button end -->
+
+
+    <main class="">
+
+
+      <!-- header start -->
+      <header class="header -light -sticky-light js-header-light -classic js-header">
+        <!-- header__bar start -->
+        <div class="header__bar">
+          <div class="overflow-hidden">
+            <div class="header__logo js-header-logo">
+              <!-- <a data-barba href="index.html">
+                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
+              </a> -->
+              <a data-barba href="index.html">
+                <img class="" src="" height="" alt="logo">
+              </a>
             </div>
+          </div>
 
-            <div class="pswp__ui pswp__ui--hidden">
+          <div class="navClassic-wrap js-header-menu-classic">
+            <ul class="navClassic-list js-navClassic-list">
+              <li>
+                <a data-barba href="index.html">
+                  Home
+                </a>
+                </li>
 
-                <div class="pswp__top-bar">
+                <li>
 
-                    <div class="pswp__counter"></div>
+                <a data-barba href="about.html">
+                  About
+                </a>
+                </li>
 
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <!-- <li>
+                <a data-barba href="Projects.html">
+                  Projects  </a>
+              </li>
 
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
+              <li>
+              <a data-barba href="writing.html">
+                Writing
+              </a>
+            </li> -->
 
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            </ul>
+          </div>
 
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="header__menu__wrap overflow-hidden">
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- header__bar end -->
 
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
+        <!-- mobile nav start -->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg"></div>
 
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            <div class="nav__container">
+              <div class="nav__header">
+                <button type="button" class="nav-button-back js-nav-back">
+                  <i class="icon" data-feather="arrow-left-circle"></i>
                 </button>
 
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                  <i class="icon" data-feather="x"></i>
                 </button>
+              </div>
 
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+              <div class="nav__content">
+                <div class="nav__content__left">
+                  <div class="navList__wrap">
+                    <ul class="navList js-navList">
+                      <li>
+                        <a data-barba href="index.html">
+                          Home </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="about.html">
+                          About </a>
+                      </li>
+
+                      <!-- <li>
+                        <a data-barba href="projects.html">
+                         Projects </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="writing.html">
+                         Writing </a>
+                      </li> -->
+
+
+                    </ul>
+                  </div>
                 </div>
 
+
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
+
+
+      <!-- section start -->
+      <section class="masthead -type-3 -full-height js-masthead-type-3 js-shapes">
+        <!-- shapes start -->
+        <div class="masthead-shapes -group-2">
+          <div class="masthead-shapes__item -item-1">
+            <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
+          </div>
+        </div>
+        <!-- shapes end -->
+
+        <!-- container start -->
+        <div class="container">
+          <div class="row">
+            <div class="col-auto offset-lg-1">
+              <div class="masthead__content -left-padding pt-40 z-3">
+                <div data-split="lines" data-split-page-reveal>
+                  <p class="masthead__subtitle text-xs tracking-lg fw-500 mb-40 md:mb-32 js-subtitle">
+                    Hello, I'm
+                  </p>
+                </div>
+
+                <div data-split="lines" data-split-page-reveal>
+                  <h1 class="text-6xl masthead__text fw-600 js-title">
+                    Krijstelle Lee<br>
+
+                  </h1>
+                </div>
+
+                <div data-split="lines" data-split-page-reveal>
+                  <p class="masthead__text mt-40 md:mt-32 sm:mt-20 js-text">
+                    I'm a product designer based in Melbourne.<br>
+                    Welcome to my portfolio.
+                  </p>
+                </div>
+
+                <div class="overflow-hidden">
+                  <div class="masthead__button mt-48 md:mt-40 sm:mt-32 js-button">
+                    <a href="#contact" class="button -md -outline-black text-black">
+                      Get in touch
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container end -->
+
+      </section>
+      <!-- section end -->
+
+
+      <!-- section start -->
+      <section class="layout-pt-xl layout-pb-lg">
+        <!-- container start -->
+        <div data-anim-wrap class="container">
+          <!-- row start -->
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-8 col-lg-8">
+              <div class="sectionHeading -sm">
+                <p class="sectionHeading__subtitle">
+                  About Me
+                </p>
+                <h2 class="text-lg fw-500 leading-lg mt-32">
+
+                  With a background in industrial design, I’m curious about how things are made- whether it's digital or physical product.
+                  I'm excited to pick up new challenges whenever I get the opportunity.
+
+                  As a designer, I’m driven by learning about user behaviour and coming up with creative solutions to solve problems.
+                </h2>
+                <a href="about.html" data-barba class="button -underline fw-400 text-lg text-black mt-40">
+                  More about me
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+
+      <!-- section start -->
+      <section class="layout-pt-md layout-pb-md pl-64 pr-64">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="fancy-grid -col-3">
+
+            <div class="fancy-grid__item">
+              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="rca-alertop.html">
+                <div class="portfolioCard__img">
+                  <div class="portfolioCard__img__inner">
+                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_rcaalertop.png"></div>
+                  </div>
+                </div>
+
+                <div class="portfolioCard__content mt-20">
+                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
+                    Experience design, a/b testing, Product vision
+                  </p>
+
+                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
+                    Search alert optimisation
+                  </h3>
+                </div>
+              </a>
             </div>
 
-        </div>
+            <div class="fancy-grid__item">
+              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="rca-dm.html">
+                <div class="portfolioCard__img">
+                  <div class="portfolioCard__img__inner">
+                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_rcadm.png"></div>
+                  </div>
+                </div>
 
-    </div>
-    <!-- jQuery Library -->
-    <script type='text/javascript' src='js/library/jquery.min.js'></script>
-    <!-- Main Js Plugin -->
-    <script type='text/javascript' src='js/main.min.js'></script>
-    <!-- Air. Theme main js -->
-    <script type='text/javascript' src='js/custom.theme.js'></script>
+                <div class="portfolioCard__content mt-20">
+                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
+                    Experience design, UI design, design systems
+                  </p>
+
+                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
+                    Dark Mode
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="fancy-grid__item">
+              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="28bsw.html">
+                <div class="portfolioCard__img">
+                  <div class="portfolioCard__img__inner">
+                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_28bsw.png"></div>
+                  </div>
+                </div>
+
+                <div class="portfolioCard__content mt-20">
+                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
+                    Product development, UI design, Experience design
+                  </p>
+
+                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
+                    28 By Sam Wood
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- <div class="fancy-grid__item">
+              <a data-cursor-icon="arrow-right"  data-anim="slide-up delay-2" class="portfolioCard -type-1 -hover" data-barba href="portfolio-single-2.html">
+
+                <div class="portfolioCard__img">
+                  <div class="portfolioCard__img__inner">
+                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_gv.png"></div>
+
+                  </div>
+                </div>
+
+                <div class="portfolioCard__content mt-20">
+                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
+                    Product development, UI design
+                  </p>
+
+                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
+                    Global Village
+                  </h3>
+                </div>
+              </a>
+            </div> -->
+
+
+
+
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+
+      <!-- section start -->
+      <section class="layout-pt-lg layout-pb-lg">
+        <!-- container start -->
+        <div class="container">
+              <h2 class="sectionHeading__title">
+                Writing (coming soon)
+              </h2>
+
+          <!-- row start -->
+          <div class="row x-gap-40 y-gap-40 layout-pt-md">
+
+            <div class="col-lg-4 col-md-6">
+              <div data-anim="slide-up delay-3" class="blogCard -type-2 -hover shadow-light rounded-4">
+                <a class="blogCard__img" data-barba href="blog-article.html">
+                  <div class="bg-image js-lazy" data-bg="img/blog/thumbnail/1.jpg"></div>
+                </a>
+
+                <div class="blogCard__content px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
+
+
+                  <h4 class="blogCard__title text-2xl leading-md fw-500 text-black mt-48">
+                    <a data-barba href="">
+                      Illustration as a hobby - and how it makes me a better designer
+                    </a>
+                  </h4>
+
+                  <p class="blogCard__text mt-12">
+                  Applying design thinking in my side hustle and seeing my style evolved...
+                  </p>
+
+                  <div class="blogCard__date mt-32">
+                    <a href="#" class="button text-sm text-dark">
+                      May 28, 2020
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6">
+              <div data-anim="slide-up delay-5" class="blogCard -type-2 -hover shadow-light rounded-4">
+                <a class="blogCard__img" data-barba href="blog-article.html">
+                  <div class="bg-image js-lazy" data-bg="img/blog/thumbnail/3.jpg"></div>
+                </a>
+
+                <div class="blogCard__content px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
+
+                  <h4 class="blogCard__title text-2xl leading-md fw-500 text-black mt-48">
+                    <a data-barba href="">
+                      Find'em: User testing recruitment
+                    </a>
+                  </h4>
+
+                  <p class="blogCard__text mt-12">
+                    A mini service design project to find the right participants for research.
+                  </p>
+
+                  <div class="blogCard__date mt-32">
+                    <a href="#" class="button text-sm text-dark">
+                      April 19, 2020
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div data-anim="slide-up delay-4" class="blogCard -type-2 -hover shadow-light rounded-4">
+                <a class="blogCard__img" data-barba href="blog-article.html">
+                  <div class="bg-image js-lazy" data-bg="img/blog/thumbnail/2.jpg"></div>
+                </a>
+
+                <div class="blogCard__content px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
+
+
+                  <h4 class="blogCard__title text-2xl leading-md fw-500 text-black mt-48">
+                    <a data-barba href="">
+                      Learning Swift as a designer
+                    </a>
+                  </h4>
+
+                  <p class="blogCard__text mt-12">
+                    My experience learning code as a mobile designer.
+                  </p>
+
+                  <div class="blogCard__date mt-32">
+                    <a href="#" class="button text-sm text-dark">
+                      Jan 15, 2020
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
+
+
+      <!-- footer start -->
+      <footer class="footer -type-2 bg-white" id="contact">
+        <!-- container start -->
+        <div class="container">
+
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <p class="footer__text text-lg md:text-base">
+                Get in touch
+              </p>
+
+              <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
+                krijstellee@gmail.com
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
+              <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
+                <a href="https://twitter.com/notjustapotato">Twitter</a>
+                <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- row start -->
+          <div class="row">
+            <div class="col-auto">
+              <div class="footer__copyright">
+                <p class="text-sm">
+                   Krijstelle @2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+
+          <!-- shapes start -->
+          <div class="footer__shapes">
+            <div></div>
+            <div></div>
+          </div>
+          <!-- shapes end -->
+        </div>
+        <!-- container end -->
+      </footer>
+      <!-- footer end -->
+
+
+    </main>
+
+  </div>
+  <!-- barba container end -->
+
+
+  <!-- JavaScript -->
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
