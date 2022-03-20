@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/potato.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Krijstelle</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173253157-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173253157-1');
+    </script>
+
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+
+        <div class="preloader__progress">
+            <div class="preloader__progress__inner"></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- cursor start -->
+    <div class="cursor js-cursor">
+        <div class="cursor__wrapper">
+            <div class="cursor__follower js-follower"></div>
+            <div class="cursor__label js-label"></div>
+            <div class="cursor__icon js-icon"></div>
+        </div>
+    </div>
+    <!-- cursor end -->
+
+
+    <!-- barba container start -->
+    <div class="barba-container" data-barba="container">
+
+        <!-- to-top-button start -->
+        <button type="button" class="backButton js-backButton">
+            <span class="backButton__bg"></span>
+            <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+        </button>
+        <!-- to-top-button end -->
+
+
+        <main class="">
+
+
+            <!-- header start -->
+            <header class="header -light -sticky-light js-header-light -classic js-header">
+                <!-- header__bar start -->
+                <div class="header__bar">
+                    <div class="overflow-hidden">
+                        <div class="header__logo js-header-logo">
+                            <!-- <a data-barba href="index.html">
+                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
+              </a> -->
+                            <a data-barba href="index.html">
+                                <img class="" src="" height="" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navClassic-wrap js-header-menu-classic">
+                        <ul class="navClassic-list js-navClassic-list">
+                            <li>
+                                <a data-barba href="index.html">
+                  Home
+                </a>
+                            </li>
+
+                            <li>
+
+                                <a data-barba href="about.html">
+                  About
+                </a>
+                            </li>
+
+                            <!-- <li>
+                <a data-barba href="Projects.html">
+                  Projects  </a>
+              </li>
+
+              <li>
+              <a data-barba href="writing.html">
+                Writing
+              </a>
+            </li> -->
+
+                        </ul>
+                    </div>
+
+                    <div class="header__menu__wrap overflow-hidden">
+                        <div class="header__menu js-header-menu">
+                            <button type="button" class="nav-button-open js-nav-open">
+                                <i class="icon" data-feather="menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- header__bar end -->
+
+
+                <!-- mobile nav start -->
+                <nav class="nav js-nav">
+                    <div class="nav__inner js-nav-inner">
+                        <div class="nav__bg js-nav-bg"></div>
+
+                        <div class="nav__container">
+                            <div class="nav__header">
+                                <button type="button" class="nav-button-back js-nav-back">
+                                    <i class="icon" data-feather="arrow-left-circle"></i>
+                                </button>
+
+                                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                                    <i class="icon" data-feather="x"></i>
+                                </button>
+                            </div>
+
+                            <div class="nav__content">
+                                <div class="nav__content__left">
+                                    <div class="navList__wrap">
+                                        <ul class="navList js-navList">
+                                            <li>
+                                                <a data-barba href="index.html">
+                          Home </a>
+                                            </li>
+
+                                            <li>
+                                                <a data-barba href="about.html">
+                          About </a>
+                                            </li>
+
+                                            <!-- <li>
+                        <a data-barba href="projects.html">
+                         Projects </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="writing.html">
+                         Writing </a>
+                      </li> -->
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- nav end -->
+            </header>
+            <!-- header end -->
+
+
+            <!-- section start -->
+            <section class="masthead -type-work-1 sm:text-center js-masthead-type-work-1 js-shapes">
+
+
+                <!-- masthead__content start -->
+                <div class="masthead__content">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 col-sm-10 z-3">
+
+
+                                <div class="blogtitle">
+                                    <h1 class="text-6xl masthead__text fw-600 js-title">
+                    Finding my style in art
+
+                  </h1>
+                                    <p class="masthead__subtitle text-lg sm:text-base mb-32 sm:mb-24 js-subtitle">
+                                        and how it makes me a better product designer
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- masthead__content end -->
+
+
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+
+
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-center">
+
+
+
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="md:mt-20">
+
+                                <div class="d-flex text-xs tracking-md pt-4">
+                                    <p class="text-accent fw-600 mr-16">01.-</p>
+                                    <p class="uppercase fw-500">Context</p>
+                                </div>
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                    Earlier this year, I was asked to share my paintings in one of the design jams, where all the designers gathered together and chat about all things design. At first, I didn’t think there was anything special about my paintings, as I was still finding
+                                    my style and trying different mediums. To my surprise, as I went through my work, I began to remember the stories during each phase and how each of them has helped me to become a better product designer. </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-center">
+
+
+
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="md:mt-20">
+
+                                <div class="d-flex text-xs tracking-md pt-4">
+                                    <p class="text-accent fw-600 mr-16">02.-</p>
+                                    <p class="uppercase fw-500">Background story </p>
+                                </div>
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                    Growing up, I always enjoyed art classes and had a collection of art supplies. I was fortunate to be able to follow my passion and went to a design school to study industrial design. The course was fun but challenging. We were taught to follow a particular
+                                    style to draw products. I spent a lot of time practising and it somehow became a chore. Every week I was nervous that my sketches would get markdown if the lines were not good enough. Painting no longer was a hobby
+                                    anymore.
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="md:mt-20">
+
+                                <div class="d-flex text-xs tracking-md pt-4">
+                                    <p class="text-accent fw-600 mr-16">03.-</p>
+                                    <p class="uppercase fw-500">Re-learn everything about colour </p>
+                                </div>
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                    Fast forward to 2017 when I moved into my new apartment, I began to do some abstract paintings to decorate the house. Painting in abstract was relaxing. I didn’t know what the end picture would look like when I started. All I wanted was something cohesive
+                                    to the colour scheme with the rest of the furniture in the house. I wanted to get back to painting so I went to classes to learn about oil painting. It gave me a good understanding of warm and cool colours and composition.
+
+                                </p>
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                    I also got an iPad and continued to do still life paintings with oil painting texture. Painting on iPad was much faster, but mixing colours in digital was different from doing it in real life. It gave me a deeper understanding of the HSR colour system.
+                                    I learned to adjust saturation, hue, and ratio, rather just randomly picked colours from the grid. Around the same time at work, I was working on dark mode. I realised I was able to adjust the current palette for dark
+                                    mode colours because I’m more familiar with how the HSR system works.
+
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="md:mt-20">
+
+                                <div class="d-flex text-xs tracking-md pt-4">
+                                    <p class="text-accent fw-600 mr-16">04.-</p>
+                                    <p class="uppercase fw-500">Sharpie vs Figma </p>
+                                </div>
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                    I continued to paint in both digital and on canvas. As much as I enjoyed the convenience of painting on an iPad, there’s something about the brush stroke and the layered paints that can’t be replaced. I also felt I was about to think better while painting
+                                    with a real brush. I began to see a pattern in my workflow that I would draft in sketchpad before transferring to digital painting.
+
+                                </p>
+
+
+                                <p class="leading-5xl mt-24 sm:mt-16">
+                                  It was a light-bulb moment for me when I realised the same concept also applied to my job as a designer- the importance of drawing up user flow and lo-fi prototypes before jumping straight to Figma. Even though it’s quick and easy to jump straight to UI when we have a new idea, drawing it out on paper allows us to think it through. 
+                                </p>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+
+
+
+
+
+
+
+
+
+            <!-- footer start -->
+            <footer class="footer -type-2 bg-white" id="contact">
+                <!-- container start -->
+                <div class="container">
+
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <p class="footer__text text-lg md:text-base">
+                                Get in touch
+                            </p>
+
+                            <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
+                krijstellee@gmail.com
+              </a>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
+                            <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
+                                <a href="https://twitter.com/notjustapotato">Twitter</a>
+                                <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="footer__copyright">
+                                <p class="text-sm">
+                                    Krijstelle @2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- shapes start -->
+                    <div class="footer__shapes">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <!-- shapes end -->
+                </div>
+                <!-- container end -->
+            </footer>
+            <!-- footer end -->
+
+
+        </main>
+
+    </div>
+    <!-- barba container end -->
+
+
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
