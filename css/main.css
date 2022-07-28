@@ -1768,7 +1768,7 @@ h6 {
   display: block;
   text-align: center;
   position: relative;
-  
+
 }
 
 /*--------------------------------------------------
@@ -6083,6 +6083,9 @@ html.full-page-slider body {
   height: 100%;
 }
 
+
+
+
 .bg-video {
   -o-object-fit: cover;
      object-fit: cover;
@@ -6121,6 +6124,13 @@ html.full-page-slider body {
   .container-wide {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .container-wide {
+    height: 60vh;
   }
 }
 
@@ -12181,9 +12191,22 @@ html.full-page-slider body {
 .h-70vh {
   height: 70vh;
 }
+@media (max-width: 560px) {
+  .h-70vh {
+  height: 30vh;
+
+  }
+}
 
 .h-80vh {
   height: 80vh;
+}
+
+@media (max-width: 560px) {
+  .h-80vh {
+  height: 30vh;
+
+  }
 }
 
 .h-90vh {
