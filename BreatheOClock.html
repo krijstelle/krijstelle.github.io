@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/potato.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Krijstelle</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173253157-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173253157-1');
+    </script>
+
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+
+        <div class="preloader__progress">
+            <div class="preloader__progress__inner"></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- cursor start -->
+    <div class="cursor js-cursor">
+        <div class="cursor__wrapper">
+            <div class="cursor__follower js-follower"></div>
+            <div class="cursor__label js-label"></div>
+            <div class="cursor__icon js-icon"></div>
+        </div>
+    </div>
+    <!-- cursor end -->
+
+
+    <!-- barba container start -->
+    <div class="barba-container" data-barba="container">
+
+        <!-- to-top-button start -->
+        <button type="button" class="backButton js-backButton">
+            <span class="backButton__bg"></span>
+            <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+        </button>
+        <!-- to-top-button end -->
+
+
+        <main class="">
+
+
+            <!-- header start -->
+            <header class="header -light -sticky-light js-header-light -classic js-header">
+                <!-- header__bar start -->
+                <div class="header__bar">
+                    <div class="overflow-hidden">
+                        <div class="header__logo js-header-logo">
+                            <!-- <a data-barba href="index.html">
+                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
+              </a> -->
+                            <a data-barba href="index.html">
+                                <img class="" src="" height="" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navClassic-wrap js-header-menu-classic">
+                        <ul class="navClassic-list js-navClassic-list">
+                            <li>
+                                <a data-barba href="index.html">
+                  Home
+                </a>
+                            </li>
+
+                            <li>
+
+                                <a data-barba href="about.html">
+                  About
+                </a>
+                            </li>
+
+                            <!-- <li>
+                <a data-barba href="Projects.html">
+                  Projects  </a>
+              </li>
+
+              <li>
+              <a data-barba href="writing.html">
+                Writing
+              </a>
+            </li> -->
+
+                        </ul>
+                    </div>
+
+                    <div class="header__menu__wrap overflow-hidden">
+                        <div class="header__menu js-header-menu">
+                            <button type="button" class="nav-button-open js-nav-open">
+                                <i class="icon" data-feather="menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- header__bar end -->
+
+
+                <!-- mobile nav start -->
+                <nav class="nav js-nav">
+                    <div class="nav__inner js-nav-inner">
+                        <div class="nav__bg js-nav-bg"></div>
+
+                        <div class="nav__container">
+                            <div class="nav__header">
+                                <button type="button" class="nav-button-back js-nav-back">
+                                    <i class="icon" data-feather="arrow-left-circle"></i>
+                                </button>
+
+                                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                                    <i class="icon" data-feather="x"></i>
+                                </button>
+                            </div>
+
+                            <div class="nav__content">
+                                <div class="nav__content__left">
+                                    <div class="navList__wrap">
+                                        <ul class="navList js-navList">
+                                            <li>
+                                                <a data-barba href="index.html">
+                          Home </a>
+                                            </li>
+
+                                            <li>
+                                                <a data-barba href="about.html">
+                          About </a>
+                                            </li>
+
+                                            <!-- <li>
+                        <a data-barba href="projects.html">
+                         Projects </a>
+                      </li>
+
+                      <li>
+                        <a data-barba href="writing.html">
+                         Writing </a>
+                      </li> -->
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- nav end -->
+            </header>
+            <!-- header end -->
+
+
+            <!-- section start -->
+            <section class="masthead -type-work-1 sm:text-center js-masthead-type-work-1 js-shapes">
+                <!-- shapes start -->
+                <div class="masthead-shapes -group-4">
+                    <div class="masthead-shapes__item -item-1">
+                        <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- shapes end -->
+
+                <!-- masthead__content start -->
+                <div class="masthead__content">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-9 col-sm-10 z-3">
+
+                                <h1 class="masthead__text text-6xl fw-600 js-title">
+                    Breathe-O'Clock
+                  </h1>
+
+                                <p class="masthead__subtitle text-lg sm:text-base mb-32 sm:mb-24 js-subtitle">
+                                    Exploring the possibility of encouraging deep breathing through product movements.
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- masthead__content end -->
+
+                <!-- container start -->
+                <div class="container-wide z-5 relative">
+                    <div data-parallax="0.7" class="h-sm z-5 js-image">
+                        <div data-parallax-target class="bg-image js-lazy" data-bg="img/bc_scenario.png"></div>
+                    </div>
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+
+            <!-- section start -->
+            <section class="layout-pt-lg layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-between">
+
+                        <div class="col-auto">
+                            <div class="d-flex text-xs tracking-md pt-4">
+                                <p class="text-accent fw-600 mr-16">01.-</p>
+                                <p class="uppercase fw-500">Background</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="md:mt-20">
+
+                                <p class="text-lg text-black  sm:mt-16">
+
+
+                                    The project was done in 2012 during my honour year of industrial design as part of my graduate thesis, supervised by Dr Scott Mitchell. Throughout the year I went through user research, several rounds of user testing, and prototyping using microcontroller
+                                    Arduino board. ​
+                                    </br>
+
+                                    The goal is to create awareness of deep breathing rhythm in everyday life, which leads to relaxation and stress relief.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-between">
+
+                        <div class="col-auto">
+                            <div class="d-flex text-xs tracking-md pt-4">
+                                <p class="text-accent fw-600 mr-16">02.-</p>
+                                <p class="uppercase fw-500">Design process</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-8">
+                            <h2 class="text-2xl fw-600  ">
+                Project overview
+              </h2>
+                            <p class="leading-5xl">
+                                Throughout the year, the project had 3 milestones. Each milestone would involve a thesis check-in, form and material testing, and tech prototype testing. ​
+                                </br>
+                            </p>
+                            <img class="mt-16" src="img/bc_process.png" width="100%">
+                        </div>
+
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-between">
+
+                        <div class="col-auto">
+                            <div class="d-flex text-xs tracking-md pt-4">
+                                <p class="text-accent fw-600 mr-16">03.-</p>
+                                <p class="uppercase fw-500">Prototyping</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-7 col-lg-8">
+                            <h2 class="text-2xl fw-600 ">
+                    The making...and lots lots testings
+                  </h2>
+
+
+                            <img class="mt-16" src="img/bc_making.jpg" width="100%">
+                            <p class="leading-5xl">
+                              I explored different paper folding techniques to simulate the deep breathing movements of humany body. To be honest it was quite challenging learning different patterns while finding the right fit.
+                            </p>
+
+                            <img class="mt-16" src="img/bc_arduino-making.png" width="100%">
+                            <p class="leading-5xl">
+                              For the tech side, I experimented with different electronics, like servo motors, muscle wire and tried out different code to mimic the breathing rhythm.
+                            </p>
+                            <img class="mt-16" src="img/bc_firsttest_small.gif" width="100%">
+                        </div>
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class=" layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-between">
+
+                        <div class="col-auto">
+                            <div class="d-flex text-xs tracking-md pt-4">
+                                <p class="text-accent fw-600 mr-16">04.-</p>
+                                <p class="uppercase fw-500">Journey mapping</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-7 col-lg-8">
+
+                            <img class="mt-16" src="img/bc_journey.png" width="100%">
+                        </div>
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+            <!-- section start -->
+            <section class="layout-pt-lg layout-pb-lg">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-center text-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div class="d-flex justify-content-center text-xs tracking-md">
+                                <p class="text-accent fw-600 mr-16">01.-</p>
+                                <p class="uppercase fw-500">Final design</p>
+                            </div>
+
+
+                            <img class="mt-32" src="img/bc_final.png" width="100%">
+
+                            <div class="mt-32" style="padding:56.25% 0 0 0;position:relative;">
+                                <iframe src="https://player.vimeo.com/video/52883688?h=d9cf0dcb96&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+                        </div>
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </section>
+            <!-- section end -->
+
+
+
+
+
+
+
+
+
+
+            <!-- section start -->
+            <section class="projects-nav">
+                <!-- row start -->
+                <div class="row no-gutters">
+
+                    <div class="col-lg-6">
+                        <a data-barba href="rca-dm.html" class="projects-nav__item -prev bg-dark-1">
+                            <div class="projects-nav__img">
+                                <!-- <div class="bg-image js-lazy" data-bg="img/projects/horizontal/6.jpg"></div> -->
+                            </div>
+
+                            <div class="projects-nav__content">
+                                <div class="projects-nav__icon">
+                                    <i class="size-xl str-width-xs text-white" data-feather="arrow-left-circle"></i>
+                                </div>
+
+                                <h3 class="text-4xl fw-400 tracking-none text-white">
+                  Dark mode
+                </h3>
+
+                                <p class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase">
+                                    PREV
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <a data-barba href="rca-alertop.html" class="projects-nav__item -next bg-dark-1">
+                            <div class="projects-nav__img">
+                                <!-- <div class="bg-image js-lazy" data-bg="img/projects/horizontal/2.jpg"></div> -->
+                            </div>
+
+                            <div class="projects-nav__content">
+                                <h3 class="text-4xl fw-400 tracking-none text-white">
+                  Alert optimisation
+                </h3>
+
+                                <div class="projects-nav__icon">
+                                    <i class="size-xl str-width-xs text-white" data-feather="arrow-right-circle"></i>
+                                </div>
+
+                                <p class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase">
+                                    NEXT
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row end -->
+            </section>
+            <!-- section end -->
+
+
+            <!-- footer start -->
+            <footer class="footer -type-2 bg-white" id="contact">
+                <!-- container start -->
+                <div class="container">
+
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <p class="footer__text text-lg md:text-base">
+                                Get in touch
+                            </p>
+
+                            <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
+                krijstellee@gmail.com
+              </a>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
+                            <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
+                                <a href="https://instagram.com/notjustapotato">Instagram</a>
+                                <a href="https://twitter.com/notjustapotato">Twitter</a>
+                                <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="footer__copyright">
+                                <p class="text-sm">
+                                    Krijstelle @2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+
+                    <!-- shapes start -->
+                    <div class="footer__shapes">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <!-- shapes end -->
+                </div>
+                <!-- container end -->
+            </footer>
+            <!-- footer end -->
+
+
+        </main>
+
+    </div>
+    <!-- barba container end -->
+
+
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
