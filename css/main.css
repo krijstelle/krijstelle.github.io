@@ -6138,6 +6138,10 @@ html.full-page-slider body {
   border-radius: 0.25rem;
 }
 
+.rounded-8 {
+  border-radius: 1.25rem;
+}
+
 .rounded-base {
   border-radius: 0.375rem;
 }
