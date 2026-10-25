@@ -16,12 +16,12 @@
   --gap:          1.25rem;
   --transition:   0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   /* Left/right page space: half of the old 1280px-centred layout + clamp(1rem, 2.5vw, 2rem) gutter */
-  --page-gutter:  calc(max(0px, (100% - 1280px) / 4) + clamp(0.5rem, 1.25vw, 1rem));
+  --page-gutter:  calc(max(0px, (100% - 1280px) / 4) + clamp(2rem, 3vw, 3rem));
 }
 
 /* Roomier side padding on tablet and mobile */
 @media (max-width: 1024px) {
-  :root { --page-gutter: 2rem; }
+  :root { --page-gutter: 2.5rem; }
 }
 @media (max-width: 640px) {
   :root { --page-gutter: 1.25rem; }
@@ -1995,7 +1995,6 @@ body.page-dark .section-work .section-title { color: #F8FAFC; }
   width: 100%;
   height: auto;
   border-radius: var(--radius-sm);
-  border: 1px solid #EDEDED;
 }
 .cs-hero { margin-top: 1rem; }
 .cs-wide,
@@ -2249,7 +2248,7 @@ body.page-dark .section-work .section-title { color: #F8FAFC; }
   height: calc(100% + 2px);
   overflow: hidden;
   background: #fff;
-  border: 1px solid #E5E7EB;
+  border: 1px solid transparent; /* no grey edge on case study images */
   border-radius: var(--radius-sm);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
@@ -2347,7 +2346,7 @@ body.page-dark .section-work .section-title { color: #F8FAFC; }
   aspect-ratio: 3 / 2;
   overflow: hidden;
   background: #fff;
-  border: 1px solid #E5E7EB;
+  border: 1px solid transparent; /* no grey edge on case study images */
   border-radius: var(--radius-sm);
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.9s ease;
@@ -2515,7 +2514,6 @@ ol.cs-list { list-style: decimal; }
   object-fit: cover;
   margin-top: 1.25rem;
   border-radius: var(--radius-sm);
-  border: 1px solid #EDEDED;
   pointer-events: none;
 }
 .cs-timeline__img--placeholder {
