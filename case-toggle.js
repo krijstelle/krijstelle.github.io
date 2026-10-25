@@ -40,6 +40,17 @@
     pill.offsetWidth;
     pill.style.transition = '';
     group.classList.add('is-ready');
-    window.addEventListener('resize', function () { movePill(tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0]); });
+    function current() { return tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0]; }
+    window.addEventListener('resize', function () { movePill(current()); });
+    // The page can start hidden (e.g. behind the password screen), so the tabs measure 0 at load.
+    // Re-measure, without animating, whenever the tab row's size changes.
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(function () {
+        pill.style.transition = 'none';
+        movePill(current());
+        pill.offsetWidth;
+        pill.style.transition = '';
+      }).observe(tabs[0].parentNode);
+    }
   });
 })();

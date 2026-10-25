@@ -102,42 +102,49 @@
       <!-- 01 -->
       <section class="cs-block">
         <p class="cs-step"><span>01.</span> Initiatives</p>
-        <h2>Carry-on rules update</h2>
-        <p><strong>The ask:</strong> Update carry-on selection to reflect Jetstar’s new allowance rules.</p>
-        <p><strong>V1:</strong> Shipped the rule change on time.</p>
-        <p><strong>What testing showed:</strong> <mark class="cs-todo">the customer confusion CX testing surfaced</mark></p>
-        <p><strong>V2:</strong> <mark class="cs-todo">the fix</mark></p>
-        <p><strong>V3:</strong> <mark class="cs-todo">what changed in V3</mark></p>
+        <h2>Carry-on selection rules update</h2>
+        <p>In August 2026, Jetstar changed its carry-on rules. Instead of weighing bags at the gate, the standard fare now includes one small underseat bag, and customers can pay for overhead locker space to bring a second.</p>
+        <p>My challenge was to turn complex business rules into a simple choice customers could understand, so customers aren’t surprised by a fee at the airport.</p>
+        <p>It was a high-visibility project with many stakeholders, and the first release wasn’t perfect. As soon as it shipped, I gathered customer feedback and simplified the design.</p>
+        <p><strong>Before:</strong> Carry-on was 7kg vs 14kg.</p>
+        <p><strong>First release:</strong> Two bag options, with descriptions on the right.</p>
+        <p><strong>Updated:</strong> Simplified the options by showing the underseat bag is included and the overhead bag is optional, with an image to show where the bags go.</p>
       </section>
 
-      <!-- Carry-on versions: tabs switch the image; V3 shows first. Uses the original PNGs in img/JQ_Bags at full quality -->
+      <!-- Carry-on versions: tabs switch the image; Updated shows first. Uses the original PNGs in img/JQ_Bags at full quality -->
       <div class="cs-toggle" data-toggle>
         <div class="cs-toggle__tabs" role="tablist" aria-label="Carry-on versions">
-          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v1">V1</button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v2">V2</button>
-          <button type="button" role="tab" aria-selected="true" aria-controls="carry-v3">V3</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v1">Before</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v2">First release</button>
+          <button type="button" role="tab" aria-selected="true" aria-controls="carry-v3">Updated</button>
         </div>
         <div class="cs-toggle__panels">
         <div id="carry-v1" role="tabpanel" hidden>
-          <img src="img/JQ_Bags/Carry_on_V1.png" alt="Carry-on V1: the first version of carry-on selection under the new allowance rules" class="cs-image" loading="lazy">
+          <img src="img/JQ_Bags/Carry_on_V1.png" alt="Before: carry-on selection with a choice of 7kg or 14kg allowance" class="cs-image" loading="lazy">
         </div>
         <div id="carry-v2" role="tabpanel" hidden>
-          <img src="img/JQ_Bags/Carry_on_V2.png" alt="Carry-on V2: choosing between one underseat bag or two items, with priority carry-on as an upgrade" class="cs-image" loading="lazy">
+          <img src="img/JQ_Bags/Carry_on_V2.png" alt="First release: choosing between one underseat bag or two items, with priority carry-on as an upgrade" class="cs-image" loading="lazy">
         </div>
         <div id="carry-v3" role="tabpanel">
-          <img src="img/JQ_Bags/Carry_on_V3.png" alt="Carry-on V3: the included underseat bag shown as selected, with an overhead bag offered as an add-on" class="cs-image" loading="lazy">
+          <img src="img/JQ_Bags/Carry_on_V3.png" alt="Updated: the included underseat bag shown as selected, with an overhead bag offered as an add-on" class="cs-image" loading="lazy">
         </div>
         </div>
       </div>
 
       <section class="cs-block cs-block--sub">
-        <h2>Individual bags page update</h2>
-        <p><strong>The ask:</strong> <mark class="cs-todo">what the business wanted</mark></p>
+        <h2>Individual bags page</h2>
+        <p>The individual bags page was overdue for a reno. Most customers add bags for all passengers at once, and the business worried that making individual selection too easy would impact revenue. This is a feature particularly useful for families travelling with kids, without needing the baggage for every person.</p>
+        <p>The existing page had many usability issues, mostly because options were hidden behind a stepper. We ran rounds of usability testing on different patterns for desktop and mobile to find the most efficient design.</p>
       </section>
 
       <figure class="cs-flow">
         <a href="img/JQ_Bags/Individual%20bags%20page%20issues.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page%20issues.png" alt="The previous individual bags page, annotated with its issues: a long, repetitive page where customers had to set baggage for each passenger and each flight" loading="lazy"></a>
       </figure>
+
+      <section class="cs-block cs-block--tight">
+        <h3>On desktop</h3>
+        <p>Showing every weight option on the page let customers compare prices at a glance. Many moved up to a heavier bag once they saw how little more it cost, which the old stepper hid. Testing also showed group travellers wanted to double-check their total without doing the maths, so we added a total weight summary.</p>
+      </section>
 
       <div class="cs-pair cs-pair--tight">
         <figure>
@@ -148,18 +155,19 @@
         </figure>
       </div>
 
-      <div class="cs-split">
+      <div class="cs-split cs-split--start">
         <section class="cs-block cs-block--tight">
-          <p><strong>What I changed:</strong></p>
+          <h3>On mobile</h3>
+          <p>We tested a horizontal scroll for weights, but customers found it harder to use. We built an expandable selector instead, since vertical scrolling felt more intuitive across all ages. Customers can review each passenger’s bags and see the combined weight.</p>
+          <h3>The impact</h3>
           <ul class="cs-list">
-            <li><mark class="cs-todo">e.g. reduced banners</mark></li>
-            <li><mark class="cs-todo">e.g. clearer hierarchy</mark></li>
-            <li><mark class="cs-todo">e.g. mobile-first layout</mark></li>
+            <li>Fewer customers chose 15kg, as seeing the price of every option led them to buy heavier bags.</li>
+            <li>788 extra bag selections during the trial, mostly 25kg and 40kg, driven by mobile.</li>
+            <li>In an A/B test, baggage revenue rose $0.50 per passenger, forecast at $130k a year at scale.</li>
           </ul>
-          <p><strong>Result:</strong> <mark class="cs-todo">metric or qualitative outcome</mark></p>
         </section>
         <figure class="cs-split__aside cs-split__aside--wide">
-          <a href="img/JQ_Bags/Individual%20bags%20page-m.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page-m.png" alt="The individual bags page on mobile: checked baggage per passenger in collapsible sections" class="cs-image" loading="lazy"></a>
+          <video src="img/JQ_Bags/Individual-bags-page.mp4" poster="img/JQ_Bags/web/individual-bags-page-poster.jpg" class="cs-image" autoplay muted loop playsinline aria-label="The individual bags page on mobile: choosing a checked bag weight for each passenger in an expandable selector"></video>
         </figure>
       </div>
 
@@ -178,15 +186,17 @@
       <section class="cs-block">
         <p class="cs-step"><span>02.</span> Future state</p>
         <h2>How bags fits with the entire booking flow</h2>
-        <p>By now the pieces worked on their own, so I started designing for how they fit together. <mark class="cs-todo">What you proposed, who you brought along, where it stands.</mark></p>
+        <p>As I started to get to know our customers more and more, after many rounds of user testing, I worked closely with my PM to ideate the next phase of bags page. Or do we really need a page?</p>
+        <p>Bags are the most important factor when customers choose a bundle. The bounce rate between these pages is high. To make it easier for customers to see the value of bundles and compare their options, bringing these two sections together is crucial to providing a better booking experience.</p>
       </section>
 
-      <!-- IMAGE: replace this div with <img src="img/..." alt="..." class="cs-image cs-wide"> -->
-      <div class="bread-image bread-image--placeholder cs-wide" role="img" aria-label="Image to come: future state concept">Image: future state concept</div>
+      <figure class="cs-flow">
+        <a href="img/JQ_Bags/Bagsnexttobundles.png" data-lightbox><img src="img/JQ_Bags/Bagsnexttobundles.png" alt="Future state concept: baggage choices placed right after the fare bundles, so customers can compare bundles and bags on one page" loading="lazy"></a>
+      </figure>
 
       <section class="cs-block">
         <h3>Reflection</h3>
-        <p><mark class="cs-todo">On a page this commercially important, influence came from shipping reliably first. Trust earned on small projects is what made the bundles conversation possible.</mark></p>
+        <p>Good design doesn’t always ship in one go. The first carry-on release wasn’t where I wanted it, but by listening to stakeholders’ concerns and bringing customer evidence to every conversation, I moved the team step by step towards a simpler, clearer experience.</p>
       </section>
     </main>
 

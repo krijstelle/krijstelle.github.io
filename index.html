@@ -62,15 +62,40 @@
           <div class="card-stack-inner">
 
             <!-- Card 1 -->
-            <div class="card-wrapper" style="--index: 2;" data-theme="light">
+            <div class="card-wrapper" style="--index: 2;" data-theme="navy">
               <div class="card-animator">
                 <a href="case-jetstar-booking-flow.html" class="card">
                   <span class="card-label">Jetstar</span>
                   <h3 class="card-title">Reimagine the flight booking experience</h3>
                   <p class="card-description">Simplified a complex booking flow to reduce friction and increase conversion.</p>
                   <div class="card-footer">
-                    <!-- Widget thumbnail: date picker with the selected fare, and a fare bundle.
-                         The old flight select screenshot (img/flight-select.png) is kept in the folder. -->
+                    <!-- Thumbnail: the booking flow as a wireframe illustration (flight select with fare bundles, then extras, then payment).
+                         Previous widget thumbnail (date picker + Flex Plus bundle) is kept below in a comment so it can come back. -->
+                    <div class="card-widgets" aria-hidden="true">
+                      <div class="cw cw-flow">
+                        <div class="wf-screen">
+                          <div class="wf-head"><i class="wf-dot"></i><i class="wf-line wf-line--dark" style="--w:32%"></i><i class="wf-pill"></i></div>
+                          <div class="wf-bundles"><div class="wf-bundle" style="--c:#FDE7C8"><i class="wf-line" style="--w:80%"></i><i class="wf-line wf-line--soft" style="--w:55%"></i><i class="wf-line wf-line--soft" style="--w:65%"></i><i class="wf-btn"></i></div><div class="wf-bundle" style="--c:#FFC94D"><i class="wf-line" style="--w:80%"></i><i class="wf-line wf-line--soft" style="--w:55%"></i><i class="wf-line wf-line--soft" style="--w:65%"></i><i class="wf-btn"></i></div><div class="wf-bundle" style="--c:#FF8A05"><i class="wf-line" style="--w:80%"></i><i class="wf-line wf-line--soft" style="--w:55%"></i><i class="wf-line wf-line--soft" style="--w:65%"></i><i class="wf-btn"></i></div><div class="wf-bundle" style="--c:#FF5115"><i class="wf-line" style="--w:80%"></i><i class="wf-line wf-line--soft" style="--w:55%"></i><i class="wf-line wf-line--soft" style="--w:65%"></i><i class="wf-btn"></i></div></div>
+                        </div>
+                        <svg class="wf-arrow" viewBox="0 0 12 20" fill="none"><path class="wf-arrow__line" d="M6 0V15.5"/><path d="M2.5 13.5L6 17L9.5 13.5"/></svg>
+                        <div class="wf-screen">
+                          <div class="wf-head"><i class="wf-dot"></i><i class="wf-line wf-line--dark" style="--w:28%"></i></div>
+                          <div class="wf-seats"><div class="wf-seat"><i></i></div><div class="wf-seat"><i></i></div><div class="wf-seat is-on"><i></i></div><div class="wf-seat"><i></i></div><div class="wf-seat is-on"><i></i></div><div class="wf-seat"><i></i></div></div>
+                          <div class="wf-row"><i class="wf-bag"></i><i class="wf-bag"></i><div class="wf-stack"><i class="wf-line wf-line--soft" style="--w:70%"></i><i class="wf-line wf-line--soft" style="--w:45%"></i></div></div>
+                        </div>
+                        <svg class="wf-arrow" viewBox="0 0 12 20" fill="none"><path class="wf-arrow__line" d="M6 0V15.5"/><path d="M2.5 13.5L6 17L9.5 13.5"/></svg>
+                        <div class="wf-screen">
+                          <div class="wf-head"><i class="wf-dot"></i><i class="wf-line wf-line--dark" style="--w:24%"></i></div>
+                          <i class="wf-line wf-line--soft" style="--w:60%"></i><i class="wf-line wf-line--soft" style="--w:40%"></i>
+                          <i class="wf-btn wf-btn--wide"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- PREVIOUS THUMBNAIL (date picker + Flex Plus bundle). To bring it back, swap it with the card-footer above.
+                  <div class="card-footer">
+                     Widget thumbnail: date picker with the selected fare, and a fare bundle.
+                         The old flight select screenshot (img/flight-select.png) is kept in the folder. 
                     <div class="card-widgets" aria-hidden="true">
                       <div class="cw cw-dates">
                         <div class="cw-date">SAT 22<b>$204</b></div>
@@ -88,25 +113,29 @@
                       </div>
                     </div>
                   </div>
+                  -->
                 </a>
               </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="card-wrapper" style="--index: 0;" data-theme="light">
+            <div class="card-wrapper" style="--index: 0;" data-theme="peach">
               <div class="card-animator">
                 <a href="case-jetstar-baggage.html" class="card">
                   <span class="card-label">Jetstar</span>
                   <h3 class="card-title">Faster, easier baggage selection</h3>
                   <p class="card-description">Turned customer insights into a clearer baggage step that travellers trust, growing ancillary revenue.</p>
                   <div class="card-footer">
-                    <!-- Widget thumbnail: checked bag weights, and the carry-on choice -->
+                    <!-- Widget thumbnail: checked bag weights (bagpage_thumbnail.png), and the carry-on accordion -->
                     <div class="card-widgets" aria-hidden="true">
+                      <img src="img/bagpage_thumbnail.png" alt="" class="cw cw-weights-img">
+                      <!-- PREVIOUS WEIGHT CHIPS (built in HTML). To bring them back, swap with the image above.
                       <div class="cw cw-weights">
                         <div class="cw-weight">15<small>kg</small><b>$34</b></div>
                         <div class="cw-weight is-selected">20<small>kg</small><b>$39</b><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
                         <div class="cw-weight">25<small>kg</small><b>$49</b></div>
                       </div>
+                      -->
                       <img src="img/accordion.svg" alt="" class="cw cw-accordion">
                     </div>
                   </div>

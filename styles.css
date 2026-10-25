@@ -655,7 +655,32 @@ body.page-dark .section-work .section-title { color: #F8FAFC; }
 .card-wrapper[data-theme="blue"] .card-description { color: rgba(255, 255, 255, 0.7); }
 .card-wrapper[data-theme="blue"] .icon-circle { background-color: rgba(255, 255, 255, 0.1); color: white; }
 
+/* Orange Theme (Jetstar flight booking) */
+.card-wrapper[data-theme="orange"] .card {
+  background-color: #F06E3C;
+  color: var(--text);
+  border: none;
+}
+.card-wrapper[data-theme="orange"] .card-label { color: rgba(17, 24, 39, 0.6); }
+.card-wrapper[data-theme="orange"] .card-description { color: rgba(17, 24, 39, 0.8); }
+
+/* Peach Theme (Jetstar baggage) */
+.card-wrapper[data-theme="peach"] .card {
+  background-color: #FFC06E;
+  color: var(--text);
+  border: none;
+}
+.card-wrapper[data-theme="peach"] .card-label { color: rgba(17, 24, 39, 0.55); }
+.card-wrapper[data-theme="peach"] .card-description { color: rgba(17, 24, 39, 0.75); }
+
 /* Dark Theme */
+.card-wrapper[data-theme="navy"] .card { background-color: #030645; color: white; border: none; }
+.card-wrapper[data-theme="navy"] .card-label { color: rgba(255, 255, 255, 0.5); }
+.card-wrapper[data-theme="navy"] .card-description { color: rgba(255, 255, 255, 0.7); }
+.card-wrapper[data-theme="navy"] .icon-circle { background-color: rgba(255, 255, 255, 0.1); color: white; }
+.card-wrapper[data-theme="navy"] .wf-screen { border-color: transparent; }
+.card-wrapper[data-theme="navy"] .wf-arrow { --c: rgba(255, 255, 255, 0.5); }
+
 .card-wrapper[data-theme="dark"] .card {
   background-color: var(--card-dark);
   color: white;
@@ -2172,6 +2197,11 @@ body.page-dark .section-work .section-title { color: #F8FAFC; }
 .cs-split:has(.cs-split__aside--wide) { grid-template-columns: minmax(0, 1fr) minmax(0, 24rem); align-items: center; }
 .cs-split:has(.cs-block--tight) { margin-top: 4rem; align-items: center; }
 .cs-split .cs-block--tight h3 { margin-top: 0; }
+/* Text column top-aligned with its image (Baggage: On mobile + The impact next to the video) */
+.cs-split.cs-split--start { align-items: start; }
+.cs-split--start > .cs-block { margin-top: 0; }
+.cs-split--start .cs-block > h3:first-child { margin-top: 0; }
+.cs-split--start .cs-block > * + h3 { margin-top: 2.5rem; }
 .cs-split__aside figcaption { margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-muted); }
 .cs-outcomes {
   display: grid;
@@ -2634,6 +2664,7 @@ video.cs-principle__media { aspect-ratio: auto; height: auto; }
 @media (prefers-reduced-motion: reduce) {
   .cs-toggle__pill, .cs-toggle.is-ready [role="tabpanel"], .cs-toggle.is-ready [role="tabpanel"].is-active { transition: none; }
 }
+.cs-toggle__tabs button:focus { outline: none; }
 .cs-toggle__tabs button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .cs-toggle__placeholder { width: 100%; max-width: none; margin: 0; aspect-ratio: 2459 / 1874; border-radius: var(--radius-sm); }
 
@@ -2749,6 +2780,20 @@ video.cs-principle__media { aspect-ratio: auto; height: auto; }
 .cw-weight .cw-check { background: #018940; }
 .cw-weight .cw-check { position: absolute; top: -0.5em; right: -0.5em; font-size: 0.8em; }
 /* Carry-on accordion is Kristelle's SVG (img/accordion.svg); it draws its own card, so only a soft shadow is added */
+/* Baggage: weight chips exported from Figma (original PNG, used as-is) */
+.cw-weights-img {
+  left: 1.25em;
+  top: 0.5em;
+  width: 20em;
+  height: auto;
+  max-width: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  filter: drop-shadow(0 0.75em 1.25em rgba(17, 24, 39, 0.18)) drop-shadow(0 0.125em 0.25em rgba(17, 24, 39, 0.08));
+  --r: -2deg;
+  --hr: 0deg;
+}
 .cw-accordion {
   right: 1.5em;
   top: 6em;
@@ -2880,3 +2925,83 @@ video.cs-principle__media { aspect-ratio: auto; height: auto; }
   .cw-inbox { top: 2em; }
   .cw-chat { top: 5.5em; }
 }
+
+/* Booking flow: wireframe illustration of the flow (flight select > extras > payment).
+   Simplified screens joined by dotted arrows; sizes in em so it scales with the card. */
+.cw-flow {
+  left: 50%;
+  top: 0.25em;
+  width: 15em;
+  margin-left: -7.5em;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --hy: -0.75em;
+  /* Keep the illustration on its own layer so Safari doesn't snap it back
+     down when the lift finishes while the arrows are animating */
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.wf-screen {
+  width: 100%;
+  padding: 0.7em 0.75em 0.8em;
+  border-radius: 0.6em;
+  background: white;
+  border: 1px solid #ECEEF2;
+  box-shadow: 0 0.75em 1.75em -0.75em rgba(17, 24, 39, 0.22), 0 0.1em 0.3em rgba(17, 24, 39, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.wf-head { display: flex; align-items: center; gap: 0.4em; margin-bottom: 0.15em; }
+.wf-dot { width: 0.55em; height: 0.55em; border-radius: 50%; background: #1E2A5A; flex: none; }
+.wf-line { display: block; width: var(--w, 60%); height: 0.32em; border-radius: 1em; background: #D9DDE6; }
+.wf-line--dark { background: #1E2A5A; height: 0.38em; }
+.wf-line--soft { background: #E8EAF0; }
+.wf-pill { margin-left: auto; width: 1.6em; height: 0.5em; border-radius: 1em; background: #5B3FD9; }
+.wf-bundles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.35em; }
+.wf-bundle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  padding: 0 0 0.4em;
+  border-radius: 0.35em;
+  background: #F7F8FA;
+  overflow: hidden;
+}
+.wf-bundle::before { content: ""; display: block; height: 0.45em; background: var(--c); margin-bottom: 0.15em; }
+.wf-bundle .wf-line { margin-inline: 0.35em; width: calc(var(--w) - 0.7em); }
+.wf-btn { display: block; height: 0.45em; margin: 0.15em 0.35em 0; border-radius: 1em; background: #FF5115; }
+.wf-btn--wide { margin: 0.3em 0 0; height: 0.65em; }
+.wf-arrow {
+  --c: #9CA3AF;
+  display: block;
+  flex: none;
+  width: 1em;
+  height: 1.4em;
+  margin: 0.1em 0;
+  overflow: visible;
+}
+.wf-arrow path {
+  stroke: var(--c);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+/* Dashes flow down towards the next screen on hover */
+.wf-arrow__line { stroke-dasharray: 2.5 2.5; }
+.card:hover .wf-arrow__line { animation: wf-dash 0.6s linear infinite; }
+@keyframes wf-dash { to { stroke-dashoffset: -5; } }
+@media (prefers-reduced-motion: reduce) { .card:hover .wf-arrow__line { animation: none; } }
+.wf-seats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.35em; }
+.wf-seat { height: 1em; border-radius: 0.25em; background: #F1F2F5; position: relative; }
+.wf-seat i { position: absolute; left: 25%; right: 25%; bottom: 0.2em; height: 0.18em; border-radius: 1em; background: #1E2A5A; }
+.wf-seat.is-on { background: #FFE9DF; }
+.wf-seat.is-on i { background: #FF5115; }
+.wf-row { display: flex; align-items: center; gap: 0.45em; margin-top: 0.15em; }
+.wf-bag { width: 0.6em; height: 0.6em; border-radius: 50%; background: #FF5115; flex: none; }
+.wf-stack { flex: 1; display: grid; gap: 0.3em; }

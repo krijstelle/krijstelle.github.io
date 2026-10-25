@@ -1,4 +1,4 @@
-const PASSWORD = 'massivepotato'; // Change this to update the password
+const PASSWORD = 'JQ-001'; // Change this to update the password
 const STORAGE_KEY_PREFIX = 'cs-unlock:';
 
 document.addEventListener('DOMContentLoaded', () => {
