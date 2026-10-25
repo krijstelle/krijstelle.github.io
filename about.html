@@ -1,590 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="page-about">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/vendors.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/potato.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <title>Krijstelle</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173253157-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-173253157-1');
-    </script>
-
-
-</head>
-
-
-<body class="preloader-visible" data-barba="wrapper">
-
-    <!-- preloader start -->
-    <div class="preloader js-preloader">
-
-
-        <div class="preloader__progress">
-            <div class="preloader__progress__inner"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html" class="is-current" aria-current="page">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="#contact">Contact</a>
         </div>
-    </div>
-    <!-- preloader end -->
-
-
-    <!-- cursor start -->
-    <div class="cursor js-cursor">
-        <div class="cursor__wrapper">
-            <div class="cursor__follower js-follower"></div>
-            <div class="cursor__label js-label"></div>
-            <div class="cursor__icon js-icon"></div>
-        </div>
-    </div>
-    <!-- cursor end -->
-
-
-    <!-- barba container start -->
-    <div class="barba-container" data-barba="container">
-
-        <!-- to-top-button start -->
-        <button type="button" class="backButton js-backButton">
-            <span class="backButton__bg"></span>
-            <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
         </button>
-        <!-- to-top-button end -->
-
-
-        <main class="">
-
-
-            <!-- header start -->
-            <header class="header -light -sticky-light js-header-light -classic js-header">
-                <!-- header__bar start -->
-                <div class="header__bar">
-                    <div class="overflow-hidden">
-                        <div class="header__logo js-header-logo">
-                            <!-- <a data-barba href="index.html">
-                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
-              </a> -->
-                            <a data-barba href="index.html">
-                                <img class="" src="" height="" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="navClassic-wrap js-header-menu-classic">
-                        <ul class="navClassic-list js-navClassic-list">
-                            <li>
-                                <a data-barba href="index.html">
-                  Home
-                </a>
-                            </li>
-
-                            <li>
-
-                                <a data-barba href="about.html">
-                  About
-                </a>
-                            </li>
-
-                            <!-- <li>
-                <a data-barba href="Projects.html">
-                  Projects  </a>
-              </li>
-
-              <li>
-              <a data-barba href="writing.html">
-                Writing
-              </a>
-            </li> -->
-
-                        </ul>
-                    </div>
-
-                    <div class="header__menu__wrap overflow-hidden">
-                        <div class="header__menu js-header-menu">
-                            <button type="button" class="nav-button-open js-nav-open">
-                                <i class="icon" data-feather="menu"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- header__bar end -->
-
-
-                <!-- mobile nav start -->
-                <nav class="nav js-nav">
-                    <div class="nav__inner js-nav-inner">
-                        <div class="nav__bg js-nav-bg"></div>
-
-                        <div class="nav__container">
-                            <div class="nav__header">
-                                <button type="button" class="nav-button-back js-nav-back">
-                                    <i class="icon" data-feather="arrow-left-circle"></i>
-                                </button>
-
-                                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
-                                    <i class="icon" data-feather="x"></i>
-                                </button>
-                            </div>
-
-                            <div class="nav__content">
-                                <div class="nav__content__left">
-                                    <div class="navList__wrap">
-                                        <ul class="navList js-navList">
-                                            <li>
-                                                <a data-barba href="index.html">
-                          Home </a>
-                                            </li>
-
-                                            <li>
-                                                <a data-barba href="about.html">
-                          About </a>
-                                            </li>
-
-                                            <!-- <li>
-                        <a data-barba href="projects.html">
-                         Projects </a>
-                      </li>
-
-                      <li>
-                        <a data-barba href="writing.html">
-                         Writing </a>
-                      </li> -->
-
-
-                                        </ul>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <!-- nav end -->
-            </header>
-            <!-- header end -->
-
-
-
-            <!-- page header start -->
-            <section class="layout-pt-pageHeader layout-pb-lg">
-                <!-- container start -->
-                <div data-anim-wrap class="container">
-                    <!-- row start -->
-
-                    <div class="row align-items-center md:mt-120">
-                        <div class="col-lg-6 col-md-8">
-
-                            <div data-anim-child="slide-up" class="sectionHeading -md">
-                                <h1 class="sectionHeading__title">
-                  Hello
-                </h1>
-                            </div>
-                            <div data-anim-child="slide-up delay-1">
-                                <p class="text-base fw-600 leading-4xl mt-24">
-
-                                    I’m Krijstelle(pronounce: kris-dell). Nice to meet you! </br>
-                                    One of my favourite things about working as a designer is seeing ideas become products in people's hands!
-                                </p>
-                                <p class="text-base mt-24">
-                                    My strength is to use analytical data to come up with creative solutions. Working as a designer, I'm excited to learn new things everyday. From project to project, I’ve picked up some new skills as I go, such as illustration, interviewing, coding(swift),
-                                    arduino and soldering.
-                                  </br> I also enjoy exploring the creative world through different mediums, such as pottery, bread making, painting and gardening.
-                                </p>
-
-
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-lg-4 col-md-5 mt-56 " data-anim-child="slide-up delay-1 ">
-              <div class="rounded-4">
-
-                    <img class="" src="img/4.jpg" width="100%">
-                  </div>
-            </div> -->
-
-                        <div class="col-lg-4 col-md-4 col-sm-6 pl-64 md:pl-16" data-anim-child="slide-up delay-1 ">
-                            <img class="rounded-4" src="img/4.jpg" width="100%">
-                        </div>
-
-
-
-                        <!--imgage-->
-
-
-                    </div>
-                    <!-- row end -->
-                </div>
-                <!-- container end -->
-            </section>
-            <!-- page header end -->
-
-
-            <!-- Process section start -->
-            <section class="layout-pt-pageHeader layout-pb-lg">
-                <!-- container start -->
-                <div data-anim-wrap class="container">
-                    <div class="pb-40 col-lg-8 col-sm-12">
-                        <h3 class="sectionHeading__title">
-              My design process
-            </h3>
-
-                        <p class="text-base mt-24">
-                            My design process typically starts from learning about the user, then mapping out the journey and identifying what problem we’re solving before diving into any pixels.
-                          </br> I enjoy facilitating sketching workshops to bring everyone’s idea together and iterate faster.
-
-                        </p>
-                    </div>
-
-
-                    <!-- row start -->
-
-                    <div class="row md:mt-120">
-
-                        <!--imgage-->
-                        <div class="col-lg-3 col-md-5 mt-56 pr-20" data-anim-child="slide-up delay-1">
-                            <img class="col-10" src="img/p1.svg">
-                            <p class="text-base mt-24">
-                                To begin with, I would start with user research and make sure I fully understand the problem by diving into user needs and business goals.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-3 col-md-5  mt-56 pr-20" data-anim-child="slide-up delay-1">
-                            <img class="col-10" src="img/p2.svg">
-                            <p class="text-base mt-24">
-                                I then would roll out my wireframing dough to make some quick and rough prototypes for discussion, and making sure everyone is on the same page.
-                            </p>
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-5 mt-56 pr-20" data-anim-child="slide-up delay-1">
-                            <img class="col-10" src="img/p3.svg">
-                            <p class="text-base mt-24">
-                                Testing with the user helps me to understand whether or not I have achieved my goal and also getting feedback for further iteration.
-                            </p>
-                        </div>
-
-
-                        <div class="col-lg-3 col-md-5 mt-56 " data-anim-child="slide-up delay-1">
-                            <img class="col-10 " src="img/p4.svg">
-                            <p class="text-base mt-24">
-                                Then I would spice it up with more details. I work closely with the team to make sure everything is implemented as expected.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- container end -->
-            </section>
-            <!-- section end -->
-
-
-
-
-
-            <!-- section start -->
-            <section class="layout-pt-lg layout-pb-lg">
-                <!-- container start -->
-                <div class="container">
-                    <div class="pb-40 col-lg-8 col-sm-12">
-                        <h2 class="sectionHeading__title text-3xl">
-          Illustration
-          </h2>
-                        <p class="text-base mt-24">
-                            In my spare time, I illustrate from my iPad. I went through different phases exploring different techniques in digital and on canvas. Lately I've been focusing more on surface design and working towards making my prints into products.
-                        </p>
-                    </div>
-
-                    <!-- row start -->
-                    <div class="row y-gap-32">
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem ratio ratio-1:1  rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="rounded-4" src="img/artwork5.JPG" width="90%">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem ratio ratio-1:1  ">
-                                <div class="clientsItem__img">
-                                    <img class="rounded-4" src="img/artwork2.JPG" width="90%">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem ratio ratio-1:1  ">
-                                <div class="clientsItem__img">
-                                    <img class="rounded-4" src="img/artwork6.jpg" width="90%">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem ratio ratio-1:1  rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="rounded-4" src="img/artwork3.jpg" width="90%">
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div class="col-lg-6 col-sm-12">
-
-                      <div style="padding:159.17% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/812270326?h=c065dbc52f&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                </div>
-
-
-
-
-                    </div>
-                    <!-- row end -->
-
-                </div>
-                <!-- container end -->
-            </section>
-            <!-- section end -->
-
-            <!-- section start -->
-            <section class="layout-pt-lg layout-pb-lg">
-                <!-- container start -->
-                <div class="container">
-                    <div class="pb-40">
-                        <h2 class="text-3xl">
-          On my bookshelf
-          </h2>
-
-
-                    </div>
-                    <h6 class="py-8 ">
-        Currently reading
-      </h6>
-
-                    <!-- row start -->
-                    <div class="row y-gap-32">
-
-                        <div class="col-lg-3 col-sm-6 ">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_influence.jpg" alt="book">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                    Influence: The psychology of persuasion
-                  </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_empowered.jpg" alt="Client">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                                      Empowered: Ordinary People, Extraordinary Products
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-
-
-                    <h6 class="pt-40">
-            Some of my all time favourites
-          </h6>
-
-                    <!-- row start -->
-                    <div class="row y-gap-32">
-
-                        <div class="col-lg-3 col-sm-6 ">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_inspired.jpg" alt="book">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                              Inspired: How to Create Tech Products Customers Love
-                            </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_data.jpg" alt="Client">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                              Data-Driven Design: Improving User Experience with A/B
-                            </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_feedback.jpg" alt="Client">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                              Thanks for the Feedback: The Science and Art of Receiving Feedback
-                            </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div data-anim="slide-up delay-1" class="clientsItem -hover ratio ratio-3:2 rounded-4">
-                                <div class="clientsItem__img">
-                                    <img class="col-7" src="img/book_servicedesign.jpg" alt="Client">
-                                </div>
-
-                                <div class="clientsItem__content">
-                                    <h5 class="clientsItem__title text-sm text-center text-white">
-                              This is Service Design Thinking: Basics, Tools, Cases
-                            </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- row end -->
-                </div>
-                <!-- container end -->
-            </section>
-            <!-- section end -->
-
-
-
-
-
-            <!-- footer start -->
-            <footer class="footer -type-2 bg-white" id="contact">
-                <!-- container start -->
-                <div class="container">
-
-
-                    <!-- row start -->
-                    <div class="row">
-                        <div class="col-auto">
-                            <p class="footer__text text-lg md:text-base">
-                                Get in touch
-                            </p>
-
-                            <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
-                krijstellee@gmail.com
-              </a>
-                        </div>
-                    </div>
-                    <!-- row end -->
-
-                    <!-- row start -->
-                    <div class="row">
-                        <div class="col-auto">
-                            <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
-                            <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
-                              <a href="https://instagram.com/notjustapotato">Instagram</a>
-                                <a href="https://twitter.com/notjustapotato">Twitter</a>
-                                <a href="https://www.linkedin.com/in/krijstelleliao/">LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- row end -->
-
-                    <!-- row start -->
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="footer__copyright">
-                                <p class="text-sm">
-                                    Krijstelle @2021
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- row end -->
-
-                    <!-- shapes start -->
-                    <div class="footer__shapes">
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <!-- shapes end -->
-                </div>
-                <!-- container end -->
-            </footer>
-            <!-- footer end -->
-
-
-        </main>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- Intro: background + strengths, photo side by side -->
+      <section class="about-intro">
+        <div class="container about-intro__grid">
+
+          <div class="about-intro__text">
+            <!-- PLACEHOLDER COPY — edit me -->
+            <p class="hero-eyebrow">About me</p>
+            <h1 class="about-title">A love of craft,<br> in pixels and in practice.</h1>
+            <p class="about-lead">I’m a senior product designer based in Melbourne with over a decade of experience across some of Australia’s most iconic brands.</p>
+            <p class="about-lead">I love turning research into clear directions. I’m energised by solving complex problems with engineers and product managers, and sweating the small details that make a product feel good.</p>
+
+            <h2 class="about-subhead">What I'm good at</h2>
+            <ul class="strengths">
+              <li class="strength"><span class="strength__icon">🧭</span>Product strategy</li>
+              <li class="strength"><span class="strength__icon">✨</span>Interaction &amp; motion</li>
+              <li class="strength"><span class="strength__icon">🧩</span>Design systems</li>
+              <li class="strength"><span class="strength__icon">🔍</span>Research → impact</li>
+            </ul>
+          </div>
+
+          <!-- Photo placeholder — swap the src for your own photo -->
+          <div class="about-photo" id="aboutPhoto">
+            <div class="about-photo__frame">
+              <img src="img/profile.PNG" alt="Portrait of Krijstelle">
+            </div>
+          </div>
 
         </div>
-        <!-- barba container end -->
+      </section>
 
+      <!-- Career timeline -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Career</h2>
+          </div>
 
-        <!-- JavaScript -->
-        <script src="js/vendors.js"></script>
-        <script src="js/main.js"></script>
+          <!-- Career hover (preview images + row lift) is switched off. To bring it back, remove "career-layout--hover-off". -->
+          <div class="career-layout career-layout--hover-off">
 
-</body>
+          <!-- PLACEHOLDER dates + highlights — edit me -->
+          <ol class="timeline" id="timeline">
 
+            <li class="timeline__item timeline__item--current" data-preview="jetstar">
+              <span class="timeline__period">2025 — Now</span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">Jetstar <span class="now-badge">Now</span></h3>
+                <p class="timeline__role">Senior Product Designer (Contract)</p>
+                <ul class="timeline__highlights">
+                  <li>Redesigned baggage selection, growing ancillary revenue</li>
+                  <li>Reimagining the end-to-end flight booking experience</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-preview="cargroup">
+              <span class="timeline__period">2023 </span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">Car Group</h3>
+                <p class="timeline__role">Senior Product Designer (Contract)</p>
+                <ul class="timeline__highlights">
+                  <li>Led research into how customers perceive the product’s value</li>
+                  <li>Partnered with senior stakeholders to shape the vision for in-app Messaging</li>
+                  <li>Designed both a long-term vision prototype and a near-term UI uplift</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-preview="pluralsight">
+              <span class="timeline__period">2023 — 2022</span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">Pluralsight</h3>
+                <p class="timeline__role">Senior Product Designer (Contract)</p>
+                <ul class="timeline__highlights">
+                  <li>Led the integration of the Cloud learning experience into the iOS and Android app</li>
+                  <li>Ran user research and concept testing, and partnered with product to shape the app’s future strategy</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-preview="medibank">
+              <span class="timeline__period">2020 — 2022</span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">Medibank</h3>
+                <p class="timeline__role">Senior Product Designer</p>
+                <ul class="timeline__highlights">
+                  <li>Integrated the Live Better wellbeing rewards program into the Medibank app, as part of its digital transformation</li>
+                  <li>Set the visual design direction across Medibank’s brand and iOS and Android guidelines</li>
+                  <li>Validated concepts through prototyping, user research and usability testing</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-preview="rea">
+              <span class="timeline__period">2018 — 2020</span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">REA Group</h3>
+                <p class="timeline__role">Product Designer (Mobile)</p>
+                <ul class="timeline__highlights">
+                  <li>Drove app retention and engagement through growth experiments</li>
+                  <li>Led dark mode for the app, working with designers across the business</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-preview="dept">
+              <span class="timeline__period">2016 — 2018</span>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3 class="timeline__company">DEPT</h3>
+                <p class="timeline__role">Product Designer</p>
+                <ul class="timeline__highlights">
+                  <li>Partnered with early-stage startup founders to facilitate inception workshops and build their MVPs</li>
+                  <li>Designed an award-winning fitness app featured on the App Store</li>
+                </ul>
+              </div>
+            </li>
+
+          </ol>
+
+          <!-- Hover preview (desktop only). Frame is 480 × 720 — export images at 960 × 1440 (2:3). -->
+          <aside class="career-preview" aria-hidden="true">
+            <div class="career-preview__frame" id="careerPreview">
+              <figure class="career-preview__slide" data-preview="jetstar">
+                <!-- Replace with: <img src="images/about/jetstar.png" alt="Jetstar work"> -->
+                <div class="career-preview__placeholder">Jetstar<span>960 × 1440 @2x</span></div>
+              </figure>
+              <figure class="career-preview__slide" data-preview="cargroup">
+                <!-- Replace with: <img src="images/about/cargroup.png" alt="Car Group work"> -->
+                <div class="career-preview__placeholder">Car Group<span>960 × 1440 @2x</span></div>
+              </figure>
+              <figure class="career-preview__slide" data-preview="pluralsight">
+                <!-- Replace with: <img src="images/about/pluralsight.png" alt="Pluralsight work"> -->
+                <div class="career-preview__placeholder">Pluralsight<span>960 × 1440 @2x</span></div>
+              </figure>
+              <figure class="career-preview__slide" data-preview="medibank">
+                <!-- Replace with: <img src="images/about/medibank.png" alt="Medibank work"> -->
+                <div class="career-preview__placeholder">Medibank<span>960 × 1440 @2x</span></div>
+              </figure>
+              <figure class="career-preview__slide" data-preview="rea">
+                <!-- Replace with: <img src="images/about/rea.png" alt="REA Group work"> -->
+                <div class="career-preview__placeholder">REA Group<span>960 × 1440 @2x</span></div>
+              </figure>
+              <figure class="career-preview__slide" data-preview="dept">
+                <!-- Replace with: <img src="images/about/dept.png" alt="DEPT work"> -->
+                <div class="career-preview__placeholder">DEPT<span>960 × 1440 @2x</span></div>
+              </figure>
+            </div>
+          </aside>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- A year of bread. Links to the Bread page (bread.html) -->
+      <section id="bread" class="section about-bread">
+        <div class="container about-bread__inner">
+          <div class="section-header">
+            <h2 class="section-title">A year of bread</h2>
+          </div>
+          <p class="about-bread__lead">In 2026, during my free time, I worked on improving my bread making skills.</p>
+          <p class="about-bread__lead">It started out as a simple challenge for myself, to do something fun with my hands. It didn’t come naturally and there were lots of failed products. Over time, I learned the techniques and paid attention to what the dough is telling me. It turned into a lesson in design, through practice and repetition.</p>
+          <a href="bread.html" class="about-bread__link">
+            Read the bread journal <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="contact" class="footer">
+
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
+
+        <div class="container footer-content">
+          <div class="footer-top">
+            <p class="footer-eyebrow">Available for new opportunities</p>
+            <h2 class="footer-heading">Let's connect.</h2>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
+          </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
+          </div>
+        </div>
+
+      </footer>
+
+    </main>
+
+    <script src="about.js"></script>
+  </body>
 </html>

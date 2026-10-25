@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jetstar – Booking flow redesign | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="case-study-shell page-case">
+    <div id="password-overlay" class="password-overlay">
+      <div class="password-modal">
+        <h1>Protected case study</h1>
+        <p>
+          This project contains confidential work. Enter the shared password to view the full case study.
+        </p>
+        <form id="password-form" class="password-form">
+          <input
+            id="password-input"
+            type="password"
+            class="password-input"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+          <div id="password-error" class="password-error"></div>
+          <button type="submit" class="password-submit">
+            Unlock case study
+          </button>
+          <div class="password-meta">
+            Reach out to me directly if you need access.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main id="case-study-content" class="case-study-main cs-page" hidden>
+      <div class="case-study-breadcrumb">
+        CASE STUDY · JETSTAR
+      </div>
+      <h1 class="case-study-title">
+        Booking flow redesign
+      </h1>
+      <p class="case-study-subtitle">
+        Creating a design vision Jetstar’s booking teams could rally around
+      </p>
+
+      <div class="case-study-meta-grid">
+        <div>
+          <div class="case-study-meta-label">Role</div>
+          <div>Senior product designer</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Team</div>
+          <div>PM, Engineering</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Company</div>
+          <div>Jetstar</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Timeline</div>
+          <div>18 months</div>
+        </div>
+      </div>
+
+      <!-- Highlighted [placeholders] (.cs-todo) still need filling in -->
+      <!-- Previous hero image, kept in the folder: img/flight%20select.png -->
+      <video src="img/JQ%20Booking%20flow/web/browser-view-web.mp4" poster="img/JQ%20Booking%20flow/web/browser-view-poster.jpg" class="cs-image cs-hero" autoplay muted loop playsinline aria-label="The redesigned Jetstar booking flow in a browser, from choosing a bundle to checkout"></video>
+
+      <!-- 01 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>01.</span> The challenge</p>
+        <h2>The roadmap that didn’t exist</h2>
+        <p>Sometimes projects don’t come in from the roadmap.</p>
+        <p>Instead, there were just project requests from the commercial team focusing on sales targets. Customer experience was an afterthought. Together, they piled more onto an already crowded flow, and nobody owned the overall customer experience.</p>
+        <p>I noticed the problem wasn’t a lack of ideas. It was a lack of a shared picture of what customer experience we would like to build towards. This project was a puzzle I assembled one piece at a time, starting from building trust with my team, then slowly building the full picture of our vision together.</p>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>02.</span> Research &amp; Framing</p>
+        <h2>From customer insights to testable bets</h2>
+        <p>Before jumping into solutions, I worked with our researcher to run a 4 parts customer research to understand where booking broke down. </p>
+        
+        <p>Three opportunities stood out:</p>
+        <ul class="cs-list">
+          <li><strong>Choice without repetition:</strong> </li>
+          <li><strong>Faster checkout with price transparency:</strong></li>
+          <li><strong>Bundle clarity with contextual upsells:</strong> </li>
+        </ul>
+        <p>I introduced the <a href="https://www.producttalk.org/opportunity-solution-trees/" target="_blank" rel="noopener">opportunity solution tree</a> to the team and used these three insights as its branches. With the PM, I mapped every open request and idea under them, tying each one to a customer need and a measurable business outcome.</p>
+      </section>
+
+      <!-- Original kept: img/JQ Booking flow/OST.png -->
+      <figure class="cs-flow">
+        <a href="img/JQ%20Booking%20flow/web/ost.webp" data-lightbox><img src="img/JQ%20Booking%20flow/web/ost.webp" alt="Opportunity solution tree: two outcomes, reduce booking abandonment and increase bundle attachment, branch into customer opportunities, solutions and experiments such as express checkout, one bundle select, exclusive pricing and a simplified bundle card" loading="lazy"></a>
+      </figure>
+
+      <section class="cs-block cs-block--tight">
+        <p>Then I worked with my PM to prioritise the best way to sequence the experiments, based on customer impact, commercial value, and effort.</p>
+        <p>This was the turning point. Commercial saw their goals reflected in the tree. Engineering could see scope early. The team moved from debating opinions to agreeing on experiments.</p>
+      </section>
+
+      <!-- 03 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>03.</span> Prototyping</p>
+        <h2>Putting the pieces together</h2>
+        <p>Each idea worked on its own, but we didn’t know if they worked together. When Figma Make arrived, I used it to combine every solution from our tree into one end-to-end prototype in days instead of weeks. Testing the full flow showed us what customers valued most, and that’s where our principles came from.</p>
+      </section>
+      <!-- Figma Make image removed from the page; files kept: img/JQ Booking flow/FigmaMake.png and web/figma-make.webp -->
+
+      <!-- 03 continued: principles -->
+      <section class="cs-block cs-block--sub">
+        <h2>The principles that emerged</h2>
+        <p>Across every round of testing, three principles kept proving true. They became the guardrails for future booking work:</p>
+      </section>
+
+      <div class="cs-principles">
+        <div>
+          <!-- Original kept: img/JQ Booking flow/Principle1.mp4 -->
+          <video class="cs-principle__media" src="img/JQ%20Booking%20flow/web/principle1-web.mp4" poster="img/JQ%20Booking%20flow/web/principle1-poster.jpg" muted loop playsinline preload="metadata" data-play-in-view aria-label="Progressive disclosure in the flight select page"></video>
+          <div class="cs-principle__text">
+            <h3><i data-lucide="layers" class="cs-principle__icon" aria-hidden="true"></i>Progressive disclosure</h3>
+            <p>Show customers what they need now. Everything else can wait.</p>
+          </div>
+        </div>
+        <div>
+          <!-- Original kept: img/JQ Booking flow/Principle2.mp4 -->
+          <video class="cs-principle__media" src="img/JQ%20Booking%20flow/web/principle2-web.mp4" poster="img/JQ%20Booking%20flow/web/principle2-poster.jpg" muted loop playsinline preload="metadata" data-play-in-view aria-label="Simplified decisions: choosing from three bundles instead of four"></video>
+          <div class="cs-principle__text">
+            <h3><i data-lucide="mouse-pointer-click" class="cs-principle__icon" aria-hidden="true"></i>Simplified decisions</h3>
+            <p>Reduce the number of choices. The basic fare is in every booking, so customers shouldn’t have to pick it. Three bundles beat four.</p>
+          </div>
+        </div>
+        <div>
+          <!-- Original kept: img/JQ Booking flow/Principle3.mp4 -->
+          <video class="cs-principle__media" src="img/JQ%20Booking%20flow/web/principle3-web.mp4" poster="img/JQ%20Booking%20flow/web/principle3-poster.jpg" muted loop playsinline preload="metadata" data-play-in-view aria-label="Show it when it matters: the Club Jetstar offer appears once a flight is selected"></video>
+          <div class="cs-principle__text">
+            <h3><i data-lucide="clock" class="cs-principle__icon" aria-hidden="true"></i>Show it when it matters</h3>
+            <p>Nobody reads upsell banners that aren’t relevant. If we want people to join the membership, show them their instant savings at the moment they apply.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="cs-block cs-block--sub">
+        <h2>A shorter and smoother flow</h2>
+        <p>Currently customers jump through multiple hoops to complete their booking. By following the principles, we were able to reduce the number of pages from 7 to 4.</p>
+      </section>
+
+      <figure class="cs-flow">
+        <figcaption>Existing flow · 7 pages</figcaption>
+        <a href="img/JQ%20Booking%20flow/web/existing-flow.webp" data-lightbox><img src="img/JQ%20Booking%20flow/web/existing-flow.webp" alt="The existing booking flow: seven pages from flight select to checkout" loading="lazy"></a>
+      </figure>
+      <figure class="cs-flow">
+        <figcaption>New flow · 4 pages</figcaption>
+        <a href="img/JQ%20Booking%20flow/web/new-flow.webp" data-lightbox><img src="img/JQ%20Booking%20flow/web/new-flow.webp" alt="The new booking flow: four pages, Your flights, Find your seat, Tailor your trip, and Review and pay" loading="lazy"></a>
+      </figure>
+
+      <!-- 04 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>04.</span> Testing</p>
+        <h2>Solutions, tested one by one</h2>
+        <p>We A/B tested each idea on its own to measure the impact and minimise commercial risks:</p>
+      </section>
+
+      <div class="cs-timeline" data-timeline>
+        <ol class="cs-timeline__track" tabindex="0" aria-label="A/B tests in order">
+          <li class="cs-timeline__item">
+            <p class="cs-timeline__step">Test 01</p>
+            <h3>Bundle cards uplift</h3>
+            <p>Making bundle inclusions easier to digest.</p>
+            <!-- Wireframe; screenshot version kept: web/test1-bundle-cards-uplift.webp. Editable SVG: img/JQ Booking flow/Bundle cards uplift wireframe.svg -->
+            <img src="img/JQ%20Booking%20flow/web/bundle-cards-uplift-wireframe.webp" alt="Bundle cards uplift: variant A lists every feature in a two-column table; variant B groups features into short sections with the price and button in the footer" class="cs-timeline__img" loading="lazy">
+          </li>
+          <li class="cs-timeline__item">
+            <p class="cs-timeline__step">Test 02</p>
+            <h3>Exclusive pricing</h3>
+            <p>Show the value of getting a bundle.</p>
+            <!-- Wireframe; editable SVG: img/JQ Booking flow/Exclusive pricing wireframe.svg -->
+            <img src="img/JQ%20Booking%20flow/web/exclusive-pricing-wireframe.webp" alt="Exclusive pricing: variant A shows the full bundle price, $192; variant B shows only the extra cost, +$112" class="cs-timeline__img" loading="lazy">
+          </li>
+          <li class="cs-timeline__item">
+            <p class="cs-timeline__step">Test 03</p>
+            <h3>One bundle select</h3>
+            <p>94% of the customers choose the same bundle, they shouldn’t be doing the same action twice.</p>
+            <!-- Wireframe; editable SVG kept: img/JQ Booking flow/One bundle select wireframe.svg -->
+            <img src="img/JQ%20Booking%20flow/web/one-bundle-select.webp" alt="One bundle select: variant A asks for a flight, then a bundle, then a flight, then a bundle; variant B asks for both flights, then one bundle for both" class="cs-timeline__img" loading="lazy">
+          </li>
+          <li class="cs-timeline__item">
+            <p class="cs-timeline__step">Test 04</p>
+            <h3>Bags page forward</h3>
+            <p>Streamline the decision-making process.</p>
+            <!-- Wireframe; editable SVG: img/JQ Booking flow/Bags page forward wireframe.svg -->
+            <img src="img/JQ%20Booking%20flow/web/bags-page-forward-wireframe.webp" alt="Bags page forward: in the control, baggage is on a separate page after flights and bundles; in the new version, baggage follows bundle select on the same page" class="cs-timeline__img" loading="lazy">
+          </li>
+          <li class="cs-timeline__item">
+            <p class="cs-timeline__step">Test 05</p>
+            <h3>Contextual upsells</h3>
+            <p>Push for upgrade or membership only when it’s relevant.</p>
+            <!-- Wireframe; editable SVG: img/JQ Booking flow/Contextual upsells wireframe.svg -->
+            <img src="img/JQ%20Booking%20flow/web/contextual-upsells-wireframe.webp" alt="Contextual upsells: in the control, the upgrade banner sits at the top of the page before any flight is chosen; in the new version it appears below the flights once both are selected" class="cs-timeline__img" loading="lazy">
+          </li>
+        </ol>
+        <p class="cs-timeline__hint" aria-hidden="true">Drag or scroll to see all five tests →</p>
+      </div>
+
+      <!-- 05 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>05.</span> The outcome</p>
+        <h2 class="cs-one-line">A shared vision, and a team that works differently</h2>
+      </section>
+
+      <div class="cs-outcomes">
+        <div>
+          <h3>A design vision for booking</h3>
+          <p>The team got excited by the future booking experience, adopted by the wider digital team.</p>
+        </div>
+        <div>
+          <h3>Stronger cross-functional collaboration</h3>
+          <p>A visual direction replaced abstract debates. Commercial, Product and Engineering could react to the same thing and align faster.</p>
+        </div>
+        <div>
+          <h3>From delivery-focused to product-focused</h3>
+          <p>The team shifted from working through requests to shaping problems, testing hypotheses, and measuring outcomes. Long-term strategy starts to align and plan for a way forward.</p>
+        </div>
+      </div>
+
+      
+
+      <section class="cs-block">
+        <h3>What I’ve learned about leading design</h3>
+        <ol class="cs-list">
+          <li>Through building trust with key project partners early on, we can achieve amazing things together.</li>
+          <li>Use an opportunity solution tree to keep everyone focused on the outcome, not on building more stuff.</li>
+          <li>Let customer feedback decide, not opinions. Test early, then iterate.</li>
+          <li>A vision prototype works wonders when it comes to cross-functional collaboration.</li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Shown once the case study is unlocked: prev/next case studies, then the footer.
+         Loops through the Selected work cards: Jetstar flight booking, Jetstar baggage, Carsales messaging, REA dark mode. -->
+    <div class="case-study-after" hidden>
+      <nav class="cs-pager" aria-label="More case studies">
+        <a href="case-rea-dark-mode.html" class="cs-pager__link cs-pager__link--prev">
+          <span class="cs-pager__label">Prev</span>
+          <span class="cs-pager__title">REA dark mode</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-left"></i></span>
+        </a>
+        <a href="case-jetstar-baggage.html" class="cs-pager__link cs-pager__link--next">
+          <span class="cs-pager__label">Next</span>
+          <span class="cs-pager__title">Jetstar baggage</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+        </a>
+      </nav>
+
+      <footer id="contact" class="footer footer--case">
+
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
+
+        <div class="container footer-content">
+          <div class="footer-top">
+            <h2 class="footer-heading">There’s more to the story</h2>
+            <p class="footer-lead">If you’d like to hear about my projects in more detail, feel free to get in touch. Let’s grab a coffee!</p>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
+          </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <script src="case-study-protect.js"></script>
+    <script src="case-timeline.js"></script>
+    <script src="case-stack.js"></script>
+    <script src="case-principles.js"></script>
+    <script>if (window.lucide) lucide.createIcons();</script>
+  </body>
+</html>
+

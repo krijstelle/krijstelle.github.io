@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bread | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="case-study-shell page-bread">
+
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="case-study-main bread-page">
+      <!-- Editorial layout: text sits in a narrow column; some images break out wider, others sit offset beside the text.
+           Web copies of the photos are in img/Bread/web, originals kept in img/Bread. -->
+      <div class="bread-wrap">
+        <div class="case-study-breadcrumb">
+        EXPERIMENT · BREAD
+        </div>
+        <h1 class="case-study-title">Bread, Practice & everything I Learn Along the Way</h1>
+        <p class="case-study-subtitle bread-intro">
+        <em>An ongoing experiment in bread-making, photography, and building something of my own.</em>
+        </p>
+
+        <figure class="bread-quote">
+        <blockquote>“As much as talent counts, effort counts twice.”</blockquote>
+        <figcaption>— Angela Duckworth, <cite>Grit: The Power of Passion and Perseverance</cite></figcaption>
+        </figure>
+      </div>
+
+      <!-- Hero: breaks out wider than the text -->
+      <div class="bread-wrap">
+        <img src="img/Bread/web/hero-bread.jpg" alt="Two loaves of milk bread on a wooden board with fruit and dried flowers" class="bread-image bread-hero">
+      </div>
+
+      <div class="bread-wrap">
+        <section class="case-study-section bread-text">
+          <h2>A year of making bread</h2>
+          <p>In 2026, during my free time, I spent my time working on my bread making skills.</p>
+          <p>It started as a simple challenge: to do something fun with my hands. I didn’t expect it to become such a long-running experiment.</p>
+          <p>Bread-making didn’t come naturally. In fact, quite terribly. When I studied design in The Netherlands, I took a class about bread. Every week my classmates would showcase their fluffy bread, but mine were quite dense, uneven crusts, and plenty of attempts that didn’t turn out the way I imagined.</p>
+          <p>So this year I decided to challenge myself and give it another go.</p>
+          <p>Slowly, I started to recognise the signs. I paid closer attention to how the dough would rise, and what it needed at each stage. Instead of relying on a recipe alone, I began to develop an intuition of my own.</p>
+          <p>What started as a hobby became an unexpected lesson in design: improvement rarely comes from one big breakthrough. More often, it comes from practice, repetition, observation, and making small adjustments along the way.</p>
+        </section>
+
+        <!-- Progress shots: four in a row, 2nd and 4th dropped lower -->
+        <div class="bread-stagger">
+          <img src="img/Bread/web/progress-1.jpg" alt="Shaggy dough resting on the bench" class="bread-image" loading="lazy">
+          <img src="img/Bread/web/progress-2.jpg" alt="Shaped dough proofing in a cloth-lined basket" class="bread-image" loading="lazy">
+          <img src="img/Bread/web/progress-3.jpg" alt="Close-up of a baked sourdough crust" class="bread-image" loading="lazy">
+          <img src="img/Bread/web/progress-4.jpg" alt="A slice of sourdough on a white plate, showing the open crumb" class="bread-image" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Dark gallery band: photos read like paintings on a museum wall -->
+      <div class="bread-band">
+        <div class="bread-wrap">
+          <section class="case-study-section bread-text">
+            <h2>Seeing bread differently</h2>
+            <p>As my bread-making improved, I became just as interested in documenting the process.</p>
+            <p>I started experimenting with photography – working with light, shadows, textures, and composition to capture the character of each loaf. I was drawn to a darker, more painterly style, where the bread could sit alongside everyday objects and flowers, almost like a still-life painting.</p>
+            <p>Photography became another way to practise looking more closely. The same loaf could feel entirely different depending on the light, the angle, or the details I chose to include.</p>
+            <p>It wasn’t just about showing the final result. I wanted to capture the quiet satisfaction of making something by hand.</p>
+          </section>
+
+          <div class="bread-wall">
+            <video class="bread-image" src="img/Bread/web/360bread-web.mp4" autoplay muted loop playsinline preload="metadata" aria-label="A baked loaf turning slowly through 360 degrees"></video>
+            <img src="img/Bread/web/topview.jpg" alt="Top view of a baked loaf on a linen cloth beside a small vase of yellow flowers" class="bread-image" loading="lazy">
+            <img src="img/Bread/web/intro-1.jpg" alt="A sourdough loaf cut in half and stacked on a linen cloth" class="bread-image" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="bread-wrap">
+        <!-- Text with a small image offset beside it -->
+        <div class="bread-split bread-split--videos">
+          <section class="case-study-section bread-text">
+            <h2>Building a tool to document my process</h2>
+            <p>After a few months, I thought I could make a tool to bring everything together: the recipes I tried and tweaked were scattered across different apps, my photos were everywhere, and I wanted to visualise my calendar as I get into a rhythm of baking weekly.</p>
+            <p>So I vibe-coded a little website of my own.</p>
+            <p>It became a bread calendar to document my recipes and photography.</p>
+            <p>It was also a chance to build something for fun: to explore an idea, make it tangible, and see where it led.</p>
+            <!-- TODO: replace BREAD_SITE_URL with your Bread site link -->
+            <a href="BREAD_SITE_URL" class="about-bread__link" target="_blank" rel="noopener">
+            Visit the bread calendar <i data-lucide="arrow-up-right"></i>
+            </a>
+          </section>
+          <div class="bread-split__aside bread-videos">
+            <video class="bread-image" src="img/Bread/web/potatodough-1-web.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Browsing bakes and opening a recipe in the bread calendar"></video>
+            <video class="bread-image" src="img/Bread/web/potatodough-2-web.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Scrolling through the bread calendar month by month"></video>
+          </div>
+        </div>
+
+        <section class="case-study-section bread-text">
+          <h2>Still learning</h2>
+          <p>I’m proud to say that my family haven’t bought any bread since the start of 2026, but there’s always another technique to try, another loaf that turns out differently than expected.</p>
+          <p>Whether I’m shaping dough, composing a photograph, or building a small digital experience, I keep coming back to the same thing: curiosity, a willingness to experiment, and the satisfaction of making something a little better than before.</p>
+        </section>
+      </div>
+    </main>
+
+    <script>if (window.lucide) lucide.createIcons();</script>
+  </body>
+</html>

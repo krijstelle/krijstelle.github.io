@@ -1,616 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krijstelle | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="page-dark">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/potato.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/potato.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/potato.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/potato.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/potato.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/potato.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/potato.png">
-  <meta name="theme-color" content="#ffffff">
-
-  <title>Krijstelle</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173253157-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-173253157-1');
-</script>
-
-</head>
-
-<body class="preloader-visible" data-barba="wrapper">
-
-  <!-- preloader start -->
-  <div class="preloader js-preloader">
-
-    <div class="preloader__progress">
-      <div class="preloader__progress__inner"></div>
-    </div>
-  </div>
-  <!-- preloader end -->
-
-
-  <!-- cursor start -->
-  <div class="cursor js-cursor">
-    <div class="cursor__wrapper">
-      <div class="cursor__follower js-follower"></div>
-      <div class="cursor__label js-label"></div>
-      <div class="cursor__icon js-icon"></div>
-    </div>
-  </div>
-  <!-- cursor end -->
-
-
-  <!-- barba container start -->
-  <div class="barba-container" data-barba="container">
-
-    <!-- to-top-button start -->
-    <button type="button" class="backButton js-backButton">
-      <span class="backButton__bg"></span>
-      <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
-    </button>
-    <!-- to-top-button end -->
-
-
-    <main class="">
-
-
-      <!-- header start -->
-      <header class="header -light -sticky-light js-header-light -classic js-header">
-        <!-- header__bar start -->
-        <div class="header__bar">
-          <div class="overflow-hidden">
-            <div class="header__logo js-header-logo">
-              <!-- <a data-barba href="index.html">
-                <img class="header__logo__light" src="img/potato.png" height="20px" alt="logo">
-              </a> -->
-              <a data-barba href="index.html">
-                <img class="" src="" height="" alt="logo">
-              </a>
-            </div>
-          </div>
-
-          <div class="navClassic-wrap js-header-menu-classic">
-            <ul class="navClassic-list js-navClassic-list">
-              <li>
-                <a data-barba href="index.html">
-                  Home
-                </a>
-                </li>
-
-                <li>
-
-                <a data-barba href="about.html">
-                  About
-                </a>
-                </li>
-
-                <!-- <li>
-                <a data-barba href="Projects.html">
-                  Projects  </a>
-              </li>
-
-              <li>
-              <a data-barba href="writing.html">
-                Writing
-              </a>
-            </li> -->
-
-            </ul>
-          </div>
-
-          <div class="header__menu__wrap overflow-hidden">
-            <div class="header__menu js-header-menu">
-              <button type="button" class="nav-button-open js-nav-open">
-                <i class="icon" data-feather="menu"></i>
-              </button>
-            </div>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="/" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="#work">Work</a>
+          <a href="#experimental">Experiments</a>
+          <a href="#contact">Contact</a>
         </div>
-        <!-- header__bar end -->
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
 
+    <main>
 
-        <!-- mobile nav start -->
-        <nav class="nav js-nav">
-          <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg"></div>
+      <!-- Hero -->
+      <section class="hero">
 
-            <div class="nav__container">
-              <div class="nav__header">
-                <button type="button" class="nav-button-back js-nav-back">
-                  <i class="icon" data-feather="arrow-left-circle"></i>
-                </button>
-
-                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
-                  <i class="icon" data-feather="x"></i>
-                </button>
-              </div>
-
-              <div class="nav__content">
-                <div class="nav__content__left">
-                  <div class="navList__wrap">
-                    <ul class="navList js-navList">
-                      <li>
-                        <a data-barba href="index.html">
-                          Home </a>
-                      </li>
-
-                      <li>
-                        <a data-barba href="about.html">
-                          About </a>
-                      </li>
-
-                      <!-- <li>
-                        <a data-barba href="projects.html">
-                         Projects </a>
-                      </li>
-
-                      <li>
-                        <a data-barba href="writing.html">
-                         Writing </a>
-                      </li> -->
-
-
-                    </ul>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
-
-
-      <!-- section start -->
-      <section class="masthead -type-3 -full-height js-masthead-type-3 js-shapes">
-        <!-- shapes start -->
-        <div class="masthead-shapes -group-2">
-          <div class="masthead-shapes__item -item-1">
-            <div class="masthead-shapes__shape -white -shadow-light js-shape"></div>
-          </div>
+<div class="container">
+          <canvas id="frog-avatar"></canvas>
+         
+          <p class="hero-eyebrow">Hey, I'm Krijstelle!
+          </p>
+          <h1 class="hero-title">I love learning about what makes things work, and imagining what they could be.</h1>
+          
+          
+          <p class="hero-subtitle">
+            I bring together customer insight, product thinking and a love of craft to design intuitive digital experiences, from
+            the first question to the final pixel.
+                   </p>
+          <a href="about.html" class="hero-link">More about me<span class="hero-link__arrow" aria-hidden="true">→</span></a>
         </div>
-        <!-- shapes end -->
-
-        <!-- container start -->
-        <div class="container">
-          <div class="row">
-            <div class="col-auto offset-lg-1">
-              <div class="masthead__content -left-padding pt-40 z-3">
-                <div data-split="lines" data-split-page-reveal>
-                  <p class="masthead__subtitle text-xs tracking-lg fw-500 mb-40 md:mb-32 js-subtitle">
-                    Hello, I'm
-                  </p>
-                </div>
-
-                <div data-split="lines" data-split-page-reveal>
-                  <h1 class="text-6xl masthead__text fw-600 js-title">
-                    Krijstelle Lee<br>
-
-                  </h1>
-                </div>
-
-                <div data-split="lines" data-split-page-reveal>
-                  <p class="masthead__text mt-40 md:mt-32 sm:mt-20 js-text">
-                    I'm a senior product designer based in Melbourne.<br>
-                    Welcome to my portfolio.
-                  </p>
-                </div>
-
-                <div class="overflow-hidden">
-                  <div class="masthead__button mt-48 md:mt-40 sm:mt-32 js-button">
-                    <a href="#contact" class="button -md -outline-black text-black">
-                      Get in touch
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- container end -->
-
       </section>
-      <!-- section end -->
 
 
-      <!-- section start -->
-      <section class="layout-pt-xl layout-pb-lg">
-        <!-- container start -->
-        <div data-anim-wrap class="container">
-          <!-- row start -->
-          <div class="row justify-content-center text-center">
-            <div class="col-xl-8 col-lg-8">
-              <div class="sectionHeading -sm">
-                <p class="sectionHeading__subtitle">
-                  About Me
-                </p>
-                <h2 class="text-lg fw-500 leading-lg mt-32">
+      <!-- Selected work — swiping cards -->
+      <section id="work" class="section-work">
+        <div class="section-header-wrapper">
+          <h2 class="section-title">Selected work</h2>
+        </div>
 
-                  With a background in industrial design, I’m curious about how things are made- whether they are digital or physical products.
-                  I'm excited to pick up new challenges whenever I get the opportunity.
+        <!-- Scroll Container -->
+        <div class="card-stack-container" id="cardStack">
+          <div class="card-stack-inner">
 
-                  As a designer, I’m driven by learning about user behaviour and coming up with creative solutions to solve problems.
-                </h2>
-                <a href="about.html" data-barba class="button -underline fw-400 text-lg text-black mt-40">
-                  More about me
+            <!-- Card 1 -->
+            <div class="card-wrapper" style="--index: 2;" data-theme="light">
+              <div class="card-animator">
+                <a href="case-jetstar-booking-flow.html" class="card">
+                  <span class="card-label">Jetstar</span>
+                  <h3 class="card-title">Reimagine the flight booking experience</h3>
+                  <p class="card-description">Simplified a complex booking flow to reduce friction and increase conversion.</p>
+                  <div class="card-footer">
+                    <!-- Widget thumbnail: date picker with the selected fare, and a fare bundle.
+                         The old flight select screenshot (img/flight-select.png) is kept in the folder. -->
+                    <div class="card-widgets" aria-hidden="true">
+                      <div class="cw cw-dates">
+                        <div class="cw-date">SAT 22<b>$204</b></div>
+                        <div class="cw-date">SUN 23<b class="cw-muted">No flights</b></div>
+                        <div class="cw-date is-selected">MON 24<b>$203</b><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+                      </div>
+                      <div class="cw cw-bundle">
+                        <span class="cw-bundle__tag">Most popular</span>
+                        <h4>Flex Plus</h4>
+                        <ul>
+                          <li><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>20kg checked bag</li>
+                          <li><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Seat selection</li>
+                          <li><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Change your date</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="card-wrapper" style="--index: 0;" data-theme="light">
+              <div class="card-animator">
+                <a href="case-jetstar-baggage.html" class="card">
+                  <span class="card-label">Jetstar</span>
+                  <h3 class="card-title">Faster, easier baggage selection</h3>
+                  <p class="card-description">Turned customer insights into a clearer baggage step that travellers trust, growing ancillary revenue.</p>
+                  <div class="card-footer">
+                    <!-- Widget thumbnail: checked bag weights, and the carry-on choice -->
+                    <div class="card-widgets" aria-hidden="true">
+                      <div class="cw cw-weights">
+                        <div class="cw-weight">15<small>kg</small><b>$34</b></div>
+                        <div class="cw-weight is-selected">20<small>kg</small><b>$39</b><span class="cw-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+                        <div class="cw-weight">25<small>kg</small><b>$49</b></div>
+                      </div>
+                      <img src="img/accordion.svg" alt="" class="cw cw-accordion">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card-wrapper" style="--index: 1;" data-theme="blue">
+              <div class="card-animator">
+                <a href="case-carsales-messaging.html" class="card">
+                  <span class="card-label">Carsales</span>
+                  <h3 class="card-title">From enquiry to deal, faster</h3>
+                  <p class="card-description">Replaced a clunky enquiry form with real-time messaging to improve the communication between buyers and sellers at the most critical step in the purchase journey.</p>
+                  <div class="card-footer">
+                    <!-- Thumbnail: Kristelle's inbox screen (img/CS-inbox.png) with the buyer/seller chat on top -->
+                    <div class="card-widgets" aria-hidden="true">
+                      <img src="img/CS-inbox.png" alt="" class="cw cw-inbox">
+                      <div class="cw cw-chat">
+                        <div class="cw-bubble cw-bubble--me">Does it have a full service history?</div>
+                        <div class="cw-bubble cw-bubble--them">Yep, full logbook! Free to see it Saturday?</div>
+                        <div class="cw-typing"><i></i><i></i><i></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+            <!-- Card 4 -->
+            <div class="card-wrapper" style="--index: 3;" data-theme="dark">
+              <div class="card-animator">
+                <a href="case-rea-dark-mode.html" class="card">
+                  <span class="card-label">REA Group</span>
+                  <h3 class="card-title">Dark Mode</h3>
+                  <p class="card-description">A fun collaborative project with the developers to explore dark mode when it was first introduced at WWDC 2019.</p>
+                  <div class="card-footer">
+                    <!-- Thumbnail: Kristelle's dark mode phone (img/darkmode.png, exported at 3x) -->
+                    <div class="card-widgets" aria-hidden="true">
+                      <img src="img/darkmode.png" alt="" class="cw cw-phone">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+            <!-- End card (not clickable) — edit the text here -->
+            <div class="card-wrapper" style="--index: 4;" data-theme="end">
+              <div class="card-animator">
+                <div class="card card--end">
+                  <span class="card-label">And more</span>
+                  <h3 class="card-title">There's more where that came from</h3>
+                  <p class="card-description">More case studies are available on request. Or scroll down to Experimental for my side projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spacer for scroll -->
+            <div class="spacer"></div>
           </div>
-          <!-- row end -->
         </div>
-        <!-- container end -->
       </section>
-      <!-- section end -->
 
-
-      <!-- section start -->
-      <section class="layout-pt-md layout-pb-md pl-64 pr-64">
-        <!-- container start -->
+      <!-- Previous layout: Case Studies — Bento Grid (disabled, kept for reference)
+      <section id="work" class="section">
         <div class="container">
-          <!-- row start -->
-          <div class="fancy-grid -col-3">
+          <div class="section-header">
+            <h2 class="section-title">Case studies</h2>
+          </div>
 
+          <div class="bento-grid">
 
-            <div class="fancy-grid__item">
-              <!-- <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href=""> -->
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_lb.png"></div>
-                  </div>
-                </div>
+            [Card 1 — Jetstar (wide top-left, with image)]
+            <a href="case-jetstar-baggage.html" class="bento-card bento-card--light bento-card--c1">
+              <div class="bento-card__top">
+                <span class="bento-card__label">Jetstar</span>
+                <h3 class="bento-card__title">Redesigning the flight booking experience</h3>
+                <p class="bento-card__desc">Simplified a complex booking flow to reduce friction and increase conversion.</p>
+              </div>
+              <div class="bento-card__bottom">
+                <div class="icon-arrow"><i data-lucide="arrow-up-right"></i></div>
+                <img src="https://picsum.photos/600/400?random=1" alt="Baggage selection redesign" class="bento-card__img" />
+              </div>
+            </a>
 
-                <div class="portfolioCard__content mt-20">
+            [Card 2 — Carsales (tall right column, blue)]
+            <a href="case-carsales-messaging.html" class="bento-card bento-card--blue bento-card--c2">
+              <div class="bento-card__top">
+                <span class="bento-card__label">CAR GROUP</span>
+                <h3 class="bento-card__title">Closing deals faster, in-app</h3>
+                <p class="bento-card__desc">Replaced a clunky enquiry form with real-time messaging — cutting drop-off between buyers and sellers at the most critical step in the purchase journey.</p>
+              </div>
+              <div class="bento-card__bottom">
+                <div class="icon-arrow"><i data-lucide="arrow-up-right"></i></div>
+              </div>
+            </a>
 
+            [Card 3 — REA Rich Data]
+            <a href="case-rea-rich-data.html" class="bento-card bento-card--light bento-card--c3">
+              <div class="bento-card__top">
+                <span class="bento-card__label">REA Realcommercial</span>
+                <h3 class="bento-card__title">A home screen worth coming back to</h3>
+                <p class="bento-card__desc">Richer, smarter content on entry drove deeper engagement and kept commercial property seekers returning to the platform.</p>
+              </div>
+              <div class="bento-card__bottom">
+                <div class="icon-arrow"><i data-lucide="arrow-up-right"></i></div>
+              </div>
+            </a>
 
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    Live Better (WIP)
-                  </h3>
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                  Live Better is Medibank's health & wellbeing program that rewards users with a healthier lifestyle.
-                </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="rca-alertop.html">
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_rcaalertop.png"></div>
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    Realcommercial Home
-                  </h3>
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                    By running an experimentation to uplift search alert UI, I re-designed the home screen of Realcommercial app to bring in richer content and a personalised experience.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="rca-dm.html">
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_rcadm.png"></div>
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    Dark Mode
-                  </h3>
-
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                    A fun collaborative project with the developers to explore dark mode when it was first introduced at the WWDC 2019.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="28bsw.html">
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_28bsw.png"></div>
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    28 By Sam Wood
-                  </h3>
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                    A fitness app that was previously only available on a website. The app became the core experience of the program and the main source of acquiring new members.
-                  </p>
-
-                </div>
-              </a>
-            </div>
-
-
-
-            <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="BreatheOClock.html">
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_bc.png"></div>
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    Breathe-O'Clock
-                  </h3>
-
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                    An oldie but a goodie. This was part of my thesis project exploring how physical object movements can enhance deep breathing to reduce stress.                  </p>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right" data-anim="slide-up delay-1" class="portfolioCard -type-1 -hover" data-barba href="Playground.html">
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_playground.png"></div>
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                  Playground
-                  </h3>
-
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                  Other small projects and experiments.
-                </div>
-              </a>
-            </div>
-
-
-
-            <!-- <div class="fancy-grid__item">
-              <a data-cursor-icon="arrow-right"  data-anim="slide-up delay-2" class="portfolioCard -type-1 -hover" data-barba href="portfolio-single-2.html">
-
-                <div class="portfolioCard__img">
-                  <div class="portfolioCard__img__inner">
-                    <div class="ratio ratio-3:4 bg-image js-lazy" data-bg="img/thumbnail_gv.png"></div>
-
-                  </div>
-                </div>
-
-                <div class="portfolioCard__content mt-20">
-                  <p class="portfolioCard__category overflow-hidden text-dark mb-8">
-                    Product development, UI design
-                  </p>
-
-                  <h3 class="portfolioCard__title overflow-hidden text-2xl fw-600">
-                    Global Village
-                  </h3>
-                </div>
-              </a>
-            </div> -->
-
-
-
+            [Card 4 — REA Dark Mode]
+            <a href="case-rea-dark-mode.html" class="bento-card bento-card--dark bento-card--c4">
+              <div class="bento-card__top">
+                <span class="bento-card__label">REA Group</span>
+                <h3 class="bento-card__title">Dark Mode</h3>
+                <p class="bento-card__desc">Just a fun project collaborating with cross-functional designers to launch dark mode on the first month when it first came out.</p>
+              </div>
+              <div class="bento-card__bottom">
+                <div class="icon-arrow"><i data-lucide="arrow-up-right"></i></div>
+              </div>
+            </a>
 
           </div>
-          <!-- row end -->
         </div>
-        <!-- container end -->
       </section>
-      <!-- section end -->
+      end of previous bento layout -->
 
-
-      <!-- section start -->
-      <section class="layout-pt-lg layout-pb-lg">
-        <!-- container start -->
+      <!-- Experimental Projects — Bento grid -->
+      <section id="experimental" class="section section--tinted">
         <div class="container">
-              <h2 class="sectionHeading__title">
-                Writing (WIP)
-              </h2>
+          <div class="section-header">
+            <h2 class="section-title">Experiments</h2>
+          </div>
 
-          <!-- row start -->
-          <div class="row x-gap-40 y-gap-40 layout-pt-md">
+          <!-- Experimental: bento grid, four staggered columns on desktop.
+               Col 1: Bread, circus. Col 2: crab, Dynamic Island. Col 3: Quire, Roo.
+               Col 4: empty placeholder (for a future video), hula hoop crab.
+               Each tile's position is set by its class in styles.css (Bento Grid section). -->
+          <div class="exp-grid">
 
-            <div class="col-lg-4 col-md-6">
-
-              <div data-anim="slide-up delay-5" class="blogCard -type-2 -hover shadow-light rounded-4">
-                  <a data-barba href="blog-userrecruitment.html">
-
-                <div class="blogCard__img"  >
-                  <div class="bg-image js-lazy" data-bg="img/blog/thumbnail/3.jpg"></div>
-
-                </div>
-                <div class=" px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
-                  <a data-barba href="blog-userrecruitment.html" class="blogCard__content" >
-
-                  <h5 class="px-8 py-8">
-
-                      Find'em: User testing recruitment
-
-                  </h5>
-
-                  <p class="px-8 py-8">
-                    A side project brewed from hackday to improve the user recruitment workflow for running research.
-                  </p>
-
-                  <p2 class="px-8 py-8">
-                    May, 2020
-                  </p2>
-                    </a>
-                </div>
-
+            <!-- Bread: the only clickable tile. Links to the Bread page (bread.html) -->
+            <a href="bread.html" class="exp-tile exp-tile--bread">
+              <img src="img/Bread/web/intro-1.jpg" alt="" class="exp-bread__photo" aria-hidden="true">
+              <div class="exp-bread__text">
+                <span class="bento-card__label">Bread</span>
+                <h3 class="exp-bread__title">A year of bread</h3>
+                <p class="exp-bread__desc">Recipes, failed loaves and what twelve months of baking taught me about design.</p>
+                <span class="exp-bread__cta">Read the story <i data-lucide="arrow-right"></i></span>
               </div>
+            </a>
+
+            <div class="exp-tile exp-tile--circus">
+              <video src="img/experimental/circus-playground-web.mp4" autoplay muted loop playsinline aria-label="Circus playground, a 3D scene made in Spline"></video>
             </div>
 
-
-            <div class="col-lg-4 col-md-6">
-              <div data-anim="slide-up delay-5" class="blogCard -type-2 -hover shadow-light rounded-4">
-                  <a data-barba href="blog-illustratinganddesign.html">
-                <div class="blogCard__img"  >
-                  <div class="bg-image js-lazy" data-bg="img/blog/thumbnail/3.jpg"></div>
-
-                </div>
-
-                <!-- blog 1 start -->
-                <div class=" px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
-                  <a data-barba href="blog-illustratinganddesign.html" class="blogCard__content" >
-
-                  <h5 class="px-8 py-8">
-
-                  Finding my style in painting
-
-                  </h5>
-
-                  <p class="px-8 py-8">
-                    and how it makes me a better product designer
-                  </p>
-
-                  <p2 class="px-8 py-8">
-                    March, 2020
-                  </p2>
-                    </a>
-                </div>
-
-              </div>
+            <div class="exp-tile exp-tile--crab">
+              <video src="img/experimental/crabby-skipping-web.mp4" autoplay muted loop playsinline aria-label="Crabby, an illustrated crab skipping rope in the kitchen"></video>
             </div>
 
+            <div class="exp-tile exp-tile--hula">
+              <video src="img/experimental/aero-recording-web.mp4" autoplay muted loop playsinline aria-label="Crabby hula hooping in a frying pan"></video>
+            </div>
 
+            <div class="exp-tile exp-tile--quire">
+              <video src="img/experimental/quire-demo-2-web.mp4" autoplay muted loop playsinline aria-label="Quire, a prototype app for reading and listening to books"></video>
+            </div>
 
+            <div class="exp-tile exp-tile--island">
+              <video src="img/experimental/dynamic-island-web.mp4" autoplay muted loop playsinline aria-label="Jetstar flight check-in in the iPhone Dynamic Island"></video>
+            </div>
 
+            <div class="exp-tile exp-tile--roo">
+              <video src="img/experimental/roo-cooking-web.mp4" autoplay muted loop playsinline aria-label="Roo, an illustrated kangaroo cooking eggs"></video>
+            </div>
 
-
-
-
+            <!-- Placeholder: swap this for a video tile when you have one -->
+            <div class="exp-tile exp-tile--placeholder" aria-hidden="true"></div>
 
           </div>
-          <!-- row end -->
         </div>
-        <!-- container end -->
       </section>
-      <!-- section end -->
 
+      <!-- Footer -->
+      <footer id="contact" class="footer">
 
-      <!-- footer start -->
-      <footer class="footer -type-2 bg-white" id="contact">
-        <!-- container start -->
-        <div class="container">
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
 
-
-          <!-- row start -->
-          <div class="row">
-            <div class="col-auto">
-              <p class="footer__text text-lg md:text-base">
-                Get in touch
-              </p>
-
-              <a href="mailto:krijstellee@gmail.com" class="footer__link text-5xl md:text-4xl xs:text-3xl button -underline fw-700 text-black mt-8">
-                krijstellee@gmail.com
-              </a>
-            </div>
+        <div class="container footer-content">
+          <div class="footer-top">
+            <p class="footer-eyebrow">Available for new opportunities</p>
+            <h2 class="footer-heading">Let's connect.</h2>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
           </div>
-          <!-- row end -->
-
-          <!-- row start -->
-          <div class="row">
-            <div class="col-auto">
-              <h5 class="text-base fw-400 text-dark mt-40">You can also find me here</h5>
-              <div class="footer__social text-black fw-500 mt-24 sm:mt-12">
-                <a href="https://instagram.com/notjustapotato">Instagram</a>
-                <a href="https://twitter.com/notjustapotato">Twitter</a>
-                <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
-              </div>
-            </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
           </div>
-          <!-- row end -->
-
-          <!-- row start -->
-          <div class="row">
-            <div class="col-auto">
-              <div class="footer__copyright">
-                <p class="text-sm">
-                   Krijstelle @2021
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-
-          <!-- shapes start -->
-          <div class="footer__shapes">
-            <div></div>
-            <div></div>
-          </div>
-          <!-- shapes end -->
         </div>
-        <!-- container end -->
+
       </footer>
-      <!-- footer end -->
-
 
     </main>
 
-  </div>
-  <!-- barba container end -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) lucide.createIcons();
 
+        // ---- Pixel frog mascot ----
+        (function () {
+          const PX = 4; // small mark; raise to make the frog bigger
+          const G = '#5dba54', D = '#2f6b2a', W = '#ffffff', T = null;
+          const BLUSH = '#f7a6a6';
 
-  <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
+          // 16 × 13 pixel grid: square eye bumps on a rectangular face
+          // (W = eye-white; pupils are drawn on top so they can follow the mouse)
+          const GRID = [
+            [T,T,G,G,G,G,G,T,T,G,G,G,G,G,T,T],
+            [T,T,G,W,W,W,G,T,T,G,W,W,W,G,T,T],
+            [T,T,G,W,W,W,G,T,T,G,W,W,W,G,T,T],
+            [T,T,G,W,W,W,G,T,T,G,W,W,W,G,T,T],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+            [G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G],
+          ];
 
-</body>
+          // Face details at half-pixel size: [x, y, width, height, colour] in grid units
+          const FEATURES = [
+            [6.5,  5.5, 0.5, 0.5, D],      // nostrils
+            [9,    5.5, 0.5, 0.5, D],
+            [2.5,  7.5, 1.5, 0.5, BLUSH],  // cheeks
+            [12,   7.5, 1.5, 0.5, BLUSH],
+            [5,    9,   6,   0.5, D],      // mouth
+            [4.5,  8.5, 0.5, 0.5, D],      // mouth corners (turned up)
+            [11,   8.5, 0.5, 0.5, D],
+          ];
 
+          const COLS = 16, ROWS = 13;
+
+          // Eye white centres in canvas px (each eye is a 3 × 3 white square)
+          const EYES = [
+            { cx: 4.5 * PX,  cy: 2.5 * PX },
+            { cx: 11.5 * PX, cy: 2.5 * PX },
+          ];
+
+          const canvas = document.getElementById('frog-avatar');
+          canvas.width  = COLS * PX;
+          canvas.height = ROWS * PX;
+          Object.assign(canvas.style, {
+            imageRendering: 'pixelated', pointerEvents: 'none',
+            display: 'block', margin: '0 0 2rem',
+          });
+          const ctx = canvas.getContext('2d');
+
+          let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+          window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+          function pupilOffset(ecx, ecy) {
+            const r   = canvas.getBoundingClientRect();
+            const dx  = mx - (r.left + ecx);
+            const dy  = my - (r.top  + ecy);
+            const d   = Math.hypot(dx, dy) || 1;
+            const max = PX * 0.9; // pupil (1px square) can travel almost to the eye edge
+            const s   = Math.min(1, d / 70);
+            return { x: (dx / d) * max * s, y: (dy / d) * max * s };
+          }
+
+          // Blink every few seconds; sometimes a quick double blink
+          let blinkUntil = 0;
+          let nextBlink = performance.now() + 2500;
+
+          function draw(now = performance.now()) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (now > nextBlink) {
+              blinkUntil = now + 140;
+              nextBlink = Math.random() < 0.25 ? now + 320 : now + 2500 + Math.random() * 4500;
+            }
+            const blinking = now < blinkUntil;
+
+            // Body
+            for (let r = 0; r < ROWS; r++) {
+              for (let c = 0; c < COLS; c++) {
+                const col = GRID[r][c];
+                if (col) {
+                  ctx.fillStyle = col;
+                  ctx.fillRect(c * PX, r * PX, PX, PX);
+                }
+              }
+            }
+
+            // Face details
+            FEATURES.forEach(([x, y, w, h, col]) => {
+              ctx.fillStyle = col;
+              ctx.fillRect(x * PX, y * PX, w * PX, h * PX);
+            });
+
+            // Closed eyes: cover the whites with skin and draw a lid line
+            if (blinking) {
+              EYES.forEach(({ cx, cy }) => {
+                ctx.fillStyle = G;
+                ctx.fillRect(cx - 1.5 * PX, cy - 1.5 * PX, 3 * PX, 3 * PX);
+                ctx.fillStyle = D;
+                ctx.fillRect(cx - 1.5 * PX, cy, 3 * PX, 0.5 * PX);
+              });
+              requestAnimationFrame(draw);
+              return;
+            }
+
+            // Pupils (drawn on top of eye-white pixels)
+            const pw = PX;
+            ctx.fillStyle = '#111111';
+            EYES.forEach(({ cx, cy }) => {
+              const { x, y } = pupilOffset(cx, cy);
+              ctx.fillRect(Math.round(cx - pw / 2 + x), Math.round(cy - pw / 2 + y), pw, pw);
+            });
+
+            requestAnimationFrame(draw);
+          }
+
+          draw();
+        })();
+        // ---- end frog ----
+
+        // ---- Hero cursor spotlight (colour shifts with horizontal position) ----
+        (function () {
+          const hero = document.querySelector('.hero');
+          const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+          const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (!hero || !finePointer || reduceMotion) return; // glow stays at its resting spot
+
+          const EASE = 0.08; // lower = lazier follow
+          let tx = null, ty = null, x = null, y = null;
+          let energy = 0, running = false;
+
+          function set(name, v) { hero.style.setProperty(name, v); }
+
+          function tick() {
+            const px = x, py = y;
+            x += (tx - x) * EASE;
+            y += (ty - y) * EASE;
+
+            // Speed → energy, which then fades back to 0
+            energy = Math.min(1, Math.max(energy * 0.94, Math.hypot(x - px, y - py) / 25));
+
+            set('--lead-x', x + 'px');
+            set('--lead-y', y + 'px');
+            set('--lead-fx', (x / hero.clientWidth).toFixed(3)); // 0 = left edge, 1 = right edge
+            set('--energy', energy.toFixed(3));
+
+            if (Math.abs(tx - x) < 0.5 && Math.abs(ty - y) < 0.5 && energy < 0.01) {
+              running = false;
+            } else {
+              requestAnimationFrame(tick);
+            }
+          }
+
+          hero.addEventListener('mousemove', e => {
+            const r = hero.getBoundingClientRect();
+            tx = e.clientX - r.left;
+            ty = e.clientY - r.top;
+            if (x === null) {
+              // First move: start from the resting spot so it glides over
+              x = r.width * 0.72;
+              y = r.height * 0.22;
+            }
+            if (!running) {
+              running = true;
+              requestAnimationFrame(tick);
+            }
+          });
+        })();
+        // ---- end spotlight ----
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
 </html>

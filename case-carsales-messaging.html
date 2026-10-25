@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carsales – Messaging | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="case-study-shell page-case">
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main id="case-study-content" class="case-study-main cs-page">
+      <div class="case-study-breadcrumb">
+        CASE STUDY · CARSALES
+      </div>
+      <h1 class="case-study-title">
+        From enquiry forms to real-time chat
+      </h1>
+      <p class="case-study-subtitle">
+        I redesigned how buyers and sellers talk on Australia's largest car marketplace, and turned the research into a roadmap the business backed with a dedicated team.
+      </p>
+
+      <div class="case-study-meta-grid">
+        <div>
+          <div class="case-study-meta-label">Role</div>
+          <div>Senior Product Designer</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Company</div>
+          <div>Carsales</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Timeline</div>
+          <div>5 months</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Platforms</div>
+          <div>iOS, Android and web</div>
+        </div>
+      </div>
+
+      <!-- Images: web copies cropped from the showcase slides, in img/carsales/web -->
+      <img src="img/carsales/web/cs_hero.jpg" alt="Carsales messaging on phone, tablet and desktop" class="cs-image cs-hero">
+
+      <!-- 01 -->
+      <div class="cs-split">
+        <section class="cs-block">
+          <p class="cs-step"><span>01.</span> The problem</p>
+          <h2>Conversations got lost in email</h2>
+          <p>Buying a car on Carsales started with an enquiry form. Once you sent it, the conversation moved to email, and buyers and sellers were left digging through their inboxes to keep track of it.</p>
+          <p>Engineering had already started building messaging and had a first draft of the components. What the team needed was direction: what to build, in what order, and why.</p>
+          <h3>Three opportunities shaped the work</h3>
+          <p><strong>Real-time conversations.</strong> Buyers and sellers can talk at their own pace without leaving Carsales.</p>
+          <p><strong>A foundation for the whole transaction.</strong> Chat could later carry test drives, locations, contracts and payments.</p>
+          <p><strong>Keeping up with competitors.</strong> Facebook Marketplace and Gumtree already had messaging, but they are less safe places to buy a car. Carsales could offer the convenience with more trust.</p>
+        </section>
+        <figure class="cs-split__aside">
+          <img src="img/carsales/web/cs_enquiry.png" alt="The old enquiry form: a message box, name, email, phone and postcode fields, and a Contact Seller button" class="cs-image" loading="lazy">
+          <figcaption>The old enquiry form</figcaption>
+        </figure>
+      </div>
+
+      <!-- 02 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>02.</span> Leading the work</p>
+        <h2>Two tracks at once</h2>
+        <p><strong>Shaping the direction.</strong> With the Group Product Manager, Engineering Manager, lead engineers and Design Manager, I ran discovery research, prototyped concepts, tested them and validated the findings with a survey. Together we turned that into the product roadmap.</p>
+        <p><strong>Shipping the craft.</strong> With a UX intern and the mobile and web squads, I uplifted the existing UI while engineering worked on the back end. I also worked with the design system team so the new messaging components matched the wider Car Group brand.</p>
+      </section>
+
+      <img src="img/carsales/web/cs_team.jpg" alt="Two groups I worked with. Delivery: me, a UX intern, the mobile squad and the web squad, on the UI update, design system, components and responsive design. Direction: me, the Engineering Manager, Group Product Manager, lead engineers and Design Manager, on discovery research, prototyping, concept testing, a survey and the product roadmap" class="cs-image cs-wide" loading="lazy">
+
+      <!-- 03 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>03.</span> Design decisions</p>
+        <h3>Step 1: UI uplift</h3>
+        <p>I rebuilt the existing screens as components that follow the Carsales design system. Where messaging needed something the system didn't have, such as chat bubbles, failed-message states and status colours, I collaborated with the design system team to create custom components and added them alongside it.</p>
+      </section>
+
+      <img src="img/carsales/web/Step1_UI%20uplift.png" alt="The inbox and chat screens before and after being rebuilt with components" class="cs-image cs-wide" loading="lazy">
+
+      
+      <section class="cs-block cs-block--sub">
+        <h3>One inbox, not two</h3>
+        <p>Separate Buying and Selling inboxes meant people missed messages, because they couldn't see new ones without switching tabs. Analytics showed that very few Carsales users buy and sell at the same time, so the second inbox was mostly getting in the way. Now all messages show by default, with quick filters for buying and selling.</p>
+      </section>
+
+      <img src="img/carsales/web/Inbox%20iteration-1.png" alt="Three inbox iterations: the old Selling and Buying toggle, a filter dropdown, then All messages, Buying and Selling filter chips" class="cs-image cs-wide" loading="lazy">
+
+      <div class="cs-split cs-split--top">
+        <section class="cs-block">
+          <h3>Who before what</h3>
+          <p>People recognise a chat in different ways. Some look for the car, others look for the person. Usability testing showed the name matters most here, so each card leads with the person's photo or initials. A small car thumbnail and the vehicle year and model sit underneath for context.</p>
+        </section>
+        <figure class="cs-split__aside">
+          <img src="img/carsales/web/inbox%20iteration-3.png" alt="Inbox before and after. After: all messages by default, the person's photo or initials before the car photo, and the vehicle year and model under each message" class="cs-image" loading="lazy">
+        </figure>
+      </div>
+
+      <!-- 04 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>04.</span> Responsive design</p>
+        <h2>See more with a larger screen</h2>
+        <p>The old design stretched one layout to fill the screen. Now, larger screens show more. On a medium screen, your messages sit beside the conversation. Go wider and a car details panel joins them, so buyers can check the car without leaving the chat.</p>
+      </section>
+
+      <!-- Before: the old stretched layout. After: drag the handle to resize between medium and large -->
+      <div class="cs-responsive">
+        <figure class="cs-responsive__before">
+          <figcaption>Before</figcaption>
+          <img src="img/carsales/web/wide%20chat.png" alt="The old desktop messaging: a list of conversations and a chat stretched across the full width" class="cs-image" loading="lazy">
+          
+        </figure>
+
+        <figure class="cs-resize" data-resize data-min="0.772">
+          <figcaption>
+            <span>After · drag to resize</span>
+            <span class="cs-resize__toggle">
+              <button type="button" data-size="m" aria-pressed="true">M</button>
+              <button type="button" data-size="l" aria-pressed="false">L</button>
+            </span>
+          </figcaption>
+          <div class="cs-resize__stage">
+            <div class="cs-resize__frame">
+              <img src="img/carsales/web/Responsive_M.png" alt="Medium screen: conversation list beside the chat" class="cs-resize__img cs-resize__img--m" draggable="false">
+              <img src="img/carsales/web/Responsive_L.png" alt="Large screen: conversation list, chat and a car details panel" class="cs-resize__img cs-resize__img--l" draggable="false" loading="lazy">
+            </div>
+              <button type="button" class="cs-resize__handle" role="slider" aria-label="Screen size" aria-valuemin="77" aria-valuemax="100" aria-valuenow="77" aria-valuetext="Medium screen"><span></span></button>
+          </div>
+        </figure>
+      </div>
+
+      <!-- 05 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>05.</span> The outcome</p>
+        <h2>A roadmap the business invested in</h2>
+      </section>
+
+      <div class="cs-outcomes">
+        <div>
+          <h3>Faster replies</h3>
+          <p>I shaped the early product vision, before launch data existed. We projected that instant messaging would cut average response time by 60%, so sellers hear back sooner and feel more confident selling on Carsales.</p>
+        </div>
+        <div>
+          <h3>A foundation for what's next</h3>
+          <p>Because the work moved quickly, other teams could build on it: AI assist, payments, the app team and product listings.</p>
+        </div>
+        <div>
+          <h3>A dedicated team</h3>
+          <p>The research became six months of prioritised, design-ready work in Figma. The business saw the impact and gave the team dedicated resources.</p>
+        </div>
+      </div>
+            <img src="img/carsales/web/Seller sends through attachments.png"
+              class="cs-image cs-wide" loading="lazy">
+
+              <img src="img/carsales/web/Message from the listing.png" alt="Buyer sends through attachments" class="cs-image cs-wide" loading="lazy">  
+
+      <!-- Roadmap: stacked as layers, fans out side by side when scrolled into view (case-stack.js) -->
+      <div class="cs-stack" data-stack>
+        <a href="img/carsales/web/Roadmap1.png" class="cs-stack__card">
+          <img src="img/carsales/web/Roadmap1.png" alt="Roadmap backlog: public API and new messaging features, with effort per platform" loading="lazy">
+        </a>
+        <a href="img/carsales/web/Roadmap2.png" class="cs-stack__card">
+          <img src="img/carsales/web/Roadmap2.png" alt="Roadmap backlog: UI SDK work with details, stakeholders, tech effort, design readiness and priority" loading="lazy">
+        </a>
+        <a href="img/carsales/web/Roadmap3.png" class="cs-stack__card">
+          <img src="img/carsales/web/Roadmap3.png" alt="The messaging roadmap from October to February, with Android, iOS and web work planned per feature" loading="lazy">
+        </a>
+      </div>
+    </main>
+
+    <!-- Shown once the case study is unlocked: prev/next case studies, then the footer.
+         Loops through the Selected work cards: Jetstar flight booking, Jetstar baggage, Carsales messaging, REA dark mode. -->
+    <div class="case-study-after">
+      <nav class="cs-pager" aria-label="More case studies">
+        <a href="case-jetstar-baggage.html" class="cs-pager__link cs-pager__link--prev">
+          <span class="cs-pager__label">Prev</span>
+          <span class="cs-pager__title">Jetstar baggage</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-left"></i></span>
+        </a>
+        <a href="case-rea-dark-mode.html" class="cs-pager__link cs-pager__link--next">
+          <span class="cs-pager__label">Next</span>
+          <span class="cs-pager__title">REA dark mode</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+        </a>
+      </nav>
+
+      <footer id="contact" class="footer footer--case">
+
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
+
+        <div class="container footer-content">
+          <div class="footer-top">
+            <h2 class="footer-heading">There’s more to the story</h2>
+            <p class="footer-lead">If you’d like to hear about my projects in more detail, feel free to get in touch. Let’s grab a coffee!</p>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
+          </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <script src="case-resize.js"></script>
+    <script src="case-stack.js"></script>
+    <script>if (window.lucide) lucide.createIcons();</script>
+  </body>
+</html>
+

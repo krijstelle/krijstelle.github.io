@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jetstar – Baggage | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="case-study-shell page-case">
+    <div id="password-overlay" class="password-overlay">
+      <div class="password-modal">
+        <h1>Protected case study</h1>
+        <p>
+          This project contains confidential work. Enter the shared password to view the full case study.
+        </p>
+        <form id="password-form" class="password-form">
+          <input
+            id="password-input"
+            type="password"
+            class="password-input"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+          <div id="password-error" class="password-error"></div>
+          <button type="submit" class="password-submit">
+            Unlock case study
+          </button>
+          <div class="password-meta">
+            Reach out to me directly if you need access.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main id="case-study-content" class="case-study-main cs-page" hidden>
+      <div class="case-study-breadcrumb">
+        CASE STUDY · JETSTAR
+      </div>
+      <h1 class="case-study-title">
+        Baggage
+      </h1>
+      <p class="case-study-subtitle">
+        Turning a page shaped by separate requests into one clear cohesive experience, without giving up revenue.
+      </p>
+
+      <div class="case-study-meta-grid">
+        <div>
+          <div class="case-study-meta-label">Role</div>
+          <div>Senior product designer</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Platform</div>
+          <div>Desktop &amp; mobile</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Company</div>
+          <div>Jetstar</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Timeline</div>
+          <div>24 months</div>
+        </div>
+      </div>
+
+      <!-- Highlighted [placeholders] (.cs-todo) still need filling in -->
+      <img src="img/JQ_Bags/Hero%20img.png" alt="The Jetstar baggage page on desktop and mobile, with checked baggage weights and carry-on options" class="cs-image cs-hero">
+
+      <!-- The challenge -->
+      <section class="cs-block">
+        <h2>The challenge</h2>
+        <p>Baggage is Jetstar’s biggest source of ancillary revenue, so the page never stands still. Each new commercial goal adds something to it. Airlines are also legally required to tell customers about fees and allowances, and over time that turned into a stack of banners.</p>
+        <p>My job was to balance three things:</p>
+        <ul class="cs-list">
+          <li><strong>Revenue:</strong> meet the commercial targets</li>
+          <li><strong>Regulation:</strong> inform customers properly</li>
+          <li><strong>Clarity:</strong> keep it simple enough to choose with confidence</li>
+        </ul>
+        <p>The work arrived as separate projects. Over time, I shaped it into one experience.</p>
+      </section>
+
+      <!-- 01 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>01.</span> Initiatives</p>
+        <h2>Carry-on rules update</h2>
+        <p><strong>The ask:</strong> Update carry-on selection to reflect Jetstar’s new allowance rules.</p>
+        <p><strong>V1:</strong> Shipped the rule change on time.</p>
+        <p><strong>What testing showed:</strong> <mark class="cs-todo">the customer confusion CX testing surfaced</mark></p>
+        <p><strong>V2:</strong> <mark class="cs-todo">the fix</mark></p>
+        <p><strong>V3:</strong> <mark class="cs-todo">what changed in V3</mark></p>
+      </section>
+
+      <!-- Carry-on versions: tabs switch the image; V3 shows first. Uses the original PNGs in img/JQ_Bags at full quality -->
+      <div class="cs-toggle" data-toggle>
+        <div class="cs-toggle__tabs" role="tablist" aria-label="Carry-on versions">
+          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v1">V1</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="carry-v2">V2</button>
+          <button type="button" role="tab" aria-selected="true" aria-controls="carry-v3">V3</button>
+        </div>
+        <div class="cs-toggle__panels">
+        <div id="carry-v1" role="tabpanel" hidden>
+          <img src="img/JQ_Bags/Carry_on_V1.png" alt="Carry-on V1: the first version of carry-on selection under the new allowance rules" class="cs-image" loading="lazy">
+        </div>
+        <div id="carry-v2" role="tabpanel" hidden>
+          <img src="img/JQ_Bags/Carry_on_V2.png" alt="Carry-on V2: choosing between one underseat bag or two items, with priority carry-on as an upgrade" class="cs-image" loading="lazy">
+        </div>
+        <div id="carry-v3" role="tabpanel">
+          <img src="img/JQ_Bags/Carry_on_V3.png" alt="Carry-on V3: the included underseat bag shown as selected, with an overhead bag offered as an add-on" class="cs-image" loading="lazy">
+        </div>
+        </div>
+      </div>
+
+      <section class="cs-block cs-block--sub">
+        <h2>Individual bags page update</h2>
+        <p><strong>The ask:</strong> <mark class="cs-todo">what the business wanted</mark></p>
+      </section>
+
+      <figure class="cs-flow">
+        <a href="img/JQ_Bags/Individual%20bags%20page%20issues.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page%20issues.png" alt="The previous individual bags page, annotated with its issues: a long, repetitive page where customers had to set baggage for each passenger and each flight" loading="lazy"></a>
+      </figure>
+
+      <div class="cs-pair cs-pair--tight">
+        <figure>
+          <a href="img/JQ_Bags/Individual%20bags%20page-1.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page-1.png" alt="New individual bags page: checked baggage weights for each passenger" class="cs-image" loading="lazy"></a>
+        </figure>
+        <figure>
+          <a href="img/JQ_Bags/Individual%20bags%20page-2.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page-2.png" alt="New individual bags page: carry-on options for each passenger" class="cs-image" loading="lazy"></a>
+        </figure>
+      </div>
+
+      <div class="cs-split">
+        <section class="cs-block cs-block--tight">
+          <p><strong>What I changed:</strong></p>
+          <ul class="cs-list">
+            <li><mark class="cs-todo">e.g. reduced banners</mark></li>
+            <li><mark class="cs-todo">e.g. clearer hierarchy</mark></li>
+            <li><mark class="cs-todo">e.g. mobile-first layout</mark></li>
+          </ul>
+          <p><strong>Result:</strong> <mark class="cs-todo">metric or qualitative outcome</mark></p>
+        </section>
+        <figure class="cs-split__aside cs-split__aside--wide">
+          <a href="img/JQ_Bags/Individual%20bags%20page-m.png" data-lightbox><img src="img/JQ_Bags/Individual%20bags%20page-m.png" alt="The individual bags page on mobile: checked baggage per passenger in collapsible sections" class="cs-image" loading="lazy"></a>
+        </figure>
+      </div>
+
+      <!-- FLEX CHOICE (hidden for now). To show it: remove the comment markers around this section
+           and place it under 01 Initiatives as another sub-section.
+      <section class="cs-block cs-block--sub">
+        <h2>Flex choice</h2>
+        <p><strong>The ask:</strong> <mark class="cs-todo">what the business wanted</mark></p>
+        <p><strong>What I changed:</strong> <mark class="cs-todo">the trade-off with another team, or the new pattern</mark></p>
+        <p><strong>Result:</strong> <mark class="cs-todo">metric or qualitative outcome</mark></p>
+      </section>
+      <div class="bread-image bread-image--placeholder cs-wide" role="img" aria-label="Image to come: Flex choice">Image: Flex choice</div>
+      -->
+
+      <!-- 02 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>02.</span> Future state</p>
+        <h2>How bags fits with the entire booking flow</h2>
+        <p>By now the pieces worked on their own, so I started designing for how they fit together. <mark class="cs-todo">What you proposed, who you brought along, where it stands.</mark></p>
+      </section>
+
+      <!-- IMAGE: replace this div with <img src="img/..." alt="..." class="cs-image cs-wide"> -->
+      <div class="bread-image bread-image--placeholder cs-wide" role="img" aria-label="Image to come: future state concept">Image: future state concept</div>
+
+      <section class="cs-block">
+        <h3>Reflection</h3>
+        <p><mark class="cs-todo">On a page this commercially important, influence came from shipping reliably first. Trust earned on small projects is what made the bundles conversation possible.</mark></p>
+      </section>
+    </main>
+
+    <!-- Shown once the case study is unlocked: prev/next case studies, then the footer.
+         Loops through the Selected work cards: Jetstar flight booking, Jetstar baggage, Carsales messaging, REA dark mode. -->
+    <div class="case-study-after" hidden>
+      <nav class="cs-pager" aria-label="More case studies">
+        <a href="case-jetstar-booking-flow.html" class="cs-pager__link cs-pager__link--prev">
+          <span class="cs-pager__label">Prev</span>
+          <span class="cs-pager__title">Jetstar flight booking</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-left"></i></span>
+        </a>
+        <a href="case-carsales-messaging.html" class="cs-pager__link cs-pager__link--next">
+          <span class="cs-pager__label">Next</span>
+          <span class="cs-pager__title">Carsales messaging</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+        </a>
+      </nav>
+
+      <footer id="contact" class="footer footer--case">
+
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
+
+        <div class="container footer-content">
+          <div class="footer-top">
+            <h2 class="footer-heading">There’s more to the story</h2>
+            <p class="footer-lead">If you’d like to hear about my projects in more detail, feel free to get in touch. Let’s grab a coffee!</p>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
+          </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <script src="case-study-protect.js"></script>
+    <script src="case-stack.js"></script>
+    <script src="case-toggle.js"></script>
+    <script>if (window.lucide) lucide.createIcons();</script>
+  </body>
+</html>
+

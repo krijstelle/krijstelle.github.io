@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REA Group – Dark Mode | Krijstelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="case-study-shell page-case">
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">KL</a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experimental">Experiments</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="menu-btn" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main id="case-study-content" class="case-study-main cs-page">
+      <div class="case-study-breadcrumb">
+        CASE STUDY · REA GROUP
+      </div>
+      <h1 class="case-study-title">
+        Dark Mode
+      </h1>
+      <p class="case-study-subtitle">
+        A fun collaborative project with the developers to explore dark mode when it was first introduced at WWDC 2019.
+      </p>
+
+      <div class="case-study-meta-grid">
+        <div>
+          <div class="case-study-meta-label">Role</div>
+          <div>Senior Product Designer</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Company</div>
+          <div>REA Group</div>
+        </div>
+        <div>
+          <div class="case-study-meta-label">Focus</div>
+          <div>Design systems, accessibility, motion</div>
+        </div>
+      </div>
+
+      <!-- Images: web copies in "img/dark mode/web", originals kept in "img/dark mode" -->
+      <img src="img/dark%20mode/web/dm_hero.jpg" alt="Four app screens in dark mode: home, My Alerts, search filters and a property listing" class="cs-image cs-hero">
+
+      <!-- 01 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>01.</span> The beginning</p>
+        <h2>Should we implement dark mode?</h2>
+        <p>In 2019, Apple released iOS 13, which brought dark mode to apps that chose to adopt it. As an app team, we began to ask ourselves: should we implement dark mode?</p>
+        <p>I wanted to understand the value of dark mode before jumping straight into the design, so I picked up some research in between projects. Understanding the value helped me see the benefit of dark mode as a feature, and helped the team prioritise it in our backlog.</p>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>02.</span> The research</p>
+        <h2>Peak search hours are between 8pm and 10pm</h2>
+        <p>Many movie apps already have dark mode. As most people watch movies at night, dark screens are easier on the eyes. From Mixpanel, we knew our app gets the most traffic at night. I saw an opportunity for dark mode, because people like to do a bit of searching on the app before going to bed.</p>
+        <p>Supporting dark mode also brings another user benefit: saving battery. Research shows that at full screen brightness, dark mode uses 43% less power than light mode. Black on OLED screens uses less power because the LEDs that make up each pixel are switched off, whereas displaying white means the LEDs need to shine and consume power.</p>
+      </section>
+
+      <!-- Examples: three apps with dark mode -->
+      <div class="cs-examples">
+        <figure>
+          <img src="img/dark%20mode/web/dm_googlemap.jpg" alt="Google Maps navigation in dark mode" class="cs-image" loading="lazy">
+          <figcaption>
+            <h3>Google Maps</h3>
+            <p>Google Maps switches to dark mode automatically after sunset to make night-time driving easier.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/dark%20mode/web/dm_applemovie.jpg" alt="Apple iTunes Movies browse screen in dark mode" class="cs-image" loading="lazy">
+          <figcaption>
+            <h3>Apple Movies</h3>
+            <p>Dark mode is no stranger to entertainment apps.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/dark%20mode/web/dm_twitter.jpg" alt="Twitter dark mode settings with Dim and Lights out themes" class="cs-image" loading="lazy">
+          <figcaption>
+            <h3>Twitter</h3>
+            <p>Twitter had dark mode built in before iOS 13. In settings, users can switch the app to dark mode and also choose between Dim and Lights out.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 03 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>03.</span> Design process</p>
+        <h2>Cross-team collaboration</h2>
+        <p>Working on dark mode gave me the opportunity to share knowledge and work with other app designers across the business. It was so much fun! Different teams had different views on the size of this project, so we started by defining the design principles for this piece of work. Even though each app under REA has its own identity, we wanted the new theme to be consistent at a group level. Part of the design principles (and the obvious one) was to make sure we share the same colour palette.</p>
+
+        <h3>Colour palette: first pass</h3>
+        <p>What colour should we use for dark mode? I gave it a go by picking the primary dark colour (Shadowstone) from our current component library. I thought reusing the colour would make our dark mode feel more on brand. I tried both dark blue and black. From the feedback I received, dark blue was the preferred option because people felt it was easier on the eyes.</p>
+        <p>However, when we placed the dark blue on a scale alongside other apps with dark mode, our initial palette turned out to be on the lightest side. That wasn’t ideal, because dark mode shouldn’t be too light.</p>
+        <p>The working group got together and revisited the colour palette. The goal was to find the middle point between dark blue and black. We iterated on a few options, and in the end landed on a palette we were happy to use as a reference.</p>
+      </section>
+
+      <!-- Colour palette carousel: swipe, drag, arrow keys, or the buttons and dots -->
+      <div class="cs-carousel" data-carousel>
+        <div class="cs-carousel__track" tabindex="0" role="region" aria-label="Colour palette iterations, 3 slides">
+          <figure class="cs-carousel__slide">
+            <img src="img/dark%20mode/web/dm_carousel1.jpg" alt="Colour palette, first pass: the home screen in Shadowstone dark blue and in black" class="cs-image" draggable="false">
+          </figure>
+          <figure class="cs-carousel__slide">
+            <img src="img/dark%20mode/web/dm_carousel2.jpg" alt="Colour palette iterated based on feedback: the light and dark palettes side by side" class="cs-image" draggable="false" loading="lazy">
+          </figure>
+          <figure class="cs-carousel__slide">
+            <img src="img/dark%20mode/web/dm_carousel3.jpg" alt="Lesson learnt: elevated means lighter. Saved properties in light mode, a wrong dark version and the corrected one" class="cs-image" draggable="false" loading="lazy">
+          </figure>
+        </div>
+        <div class="cs-carousel__controls">
+          <button type="button" class="cs-carousel__btn" data-prev aria-label="Previous slide"><i data-lucide="arrow-left"></i></button>
+          <div class="cs-carousel__dots" role="tablist" aria-label="Choose a slide"></div>
+          <button type="button" class="cs-carousel__btn" data-next aria-label="Next slide"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>04.</span> Development handover</p>
+        <h2>System background vs content colours</h2>
+        <p>I then passed the palette to the developer in my team. After giving it a go, we noticed it didn’t look quite right. If we just followed the palette, some of the design principles in light mode couldn’t be translated to dark mode.</p>
+        <p>From conversations with the developers in the team, I learnt that in code you can set your default background colours. We needed to separate our approach for background colours and content. This allowed us to translate the elevated views in light mode into dark mode. I came up with a simple graph to communicate this with the team, and it was shared across the business for other designers to use with their developers. The rule of thumb is to set up primary, secondary and tertiary background colours, then everything else follows the colour palette.</p>
+      </section>
+
+      <img src="img/dark%20mode/web/dm_example.jpg" alt="Diagram separating system background colours (primary, secondary, tertiary) from content colours, in light and dark mode" class="cs-image cs-wide" loading="lazy">
+
+      <!-- 05 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>05.</span> The impact</p>
+        <h2>Users are using dark mode in our app</h2>
+        <p>We saw close to 30% uptake just 2 weeks after the release in October 2019. For users with dark mode enabled, usage has increased steadily. While usage without dark mode is still higher, dark mode usage keeps rising. The goal of this project wasn’t to convert users to dark mode, but to improve the experience of the app. Seeing the share of users adopting dark mode gave us the confidence to iterate on the UI further. With popular apps (such as Instagram) slowly phasing in dark mode, we’ll keep tracking any uptake on the back of this.</p>
+      </section>
+
+      <figure class="cs-figure">
+        <img src="img/dark%20mode/web/dm_analytics.png" alt="Line chart of app usage from 1 to 10 October 2019, split by dark mode on and off, both rising" class="cs-image" loading="lazy">
+      </figure>
+
+      <section class="cs-block cs-block--tight">
+        <p>Since launching the first iteration, I’ve kept making updates, such as making sure all the minor details pass accessibility requirements.</p>
+      </section>
+
+      <!-- 06 -->
+      <section class="cs-block">
+        <p class="cs-step"><span>06.</span> Key learnings</p>
+        <h2>Socialise new ideas early</h2>
+        <p>I’m very happy with the outcome and the process of this project. I’m glad I didn’t treat it as ‘another UI card’. I started by understanding why dark mode is a thing and how it could benefit our app users. This helped me bring the team along on the journey and see the value of the change.</p>
+
+        <h3>Accessibility check</h3>
+        <p>One thing I learnt while designing for dark mode is to take accessibility checks more seriously. They’re just as important as in light mode, and even more so in dark mode, because we need to make sure the colour contrast is readable. Some components needed to be assessed case by case. Sometimes we needed to soften the colours in dark mode so everything on the page looked cohesive.</p>
+
+        <h3>Dark mode is now part of the design and QA process</h3>
+        <p>Moving forward, dark mode is part of the design process. Every new feature we design gets tested in dark mode. Just like testing on different device sizes, we want to make sure the implementation works well in dark mode, and adjust the design to accommodate it.</p>
+      </section>
+    </main>
+
+    <!-- Shown once the case study is unlocked: prev/next case studies, then the footer.
+         Loops through the Selected work cards: Jetstar flight booking, Jetstar baggage, Carsales messaging, REA dark mode. -->
+    <div class="case-study-after">
+      <nav class="cs-pager" aria-label="More case studies">
+        <a href="case-carsales-messaging.html" class="cs-pager__link cs-pager__link--prev">
+          <span class="cs-pager__label">Prev</span>
+          <span class="cs-pager__title">Carsales messaging</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-left"></i></span>
+        </a>
+        <a href="case-jetstar-booking-flow.html" class="cs-pager__link cs-pager__link--next">
+          <span class="cs-pager__label">Next</span>
+          <span class="cs-pager__title">Jetstar flight booking</span>
+          <span class="cs-pager__icon" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+        </a>
+      </nav>
+
+      <footer id="contact" class="footer footer--case">
+
+        <!-- Decorative geometry — hover easter egg -->
+        <div class="geo geo--triangle" aria-hidden="true"></div>
+        <div class="geo geo--circle"   aria-hidden="true"></div>
+        <div class="geo geo--square"   aria-hidden="true"></div>
+
+        <div class="container footer-content">
+          <div class="footer-top">
+            <h2 class="footer-heading">There’s more to the story</h2>
+            <p class="footer-lead">If you’d like to hear about my projects in more detail, feel free to get in touch. Let’s grab a coffee!</p>
+            <a href="mailto:krijstelle.lee@gmail.com" class="email-link">krijstelle.lee@gmail.com</a>
+          </div>
+          <div class="footer-bottom">
+            <nav class="footer-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/krijstellee/">LinkedIn</a>
+              <a href="https://www.instagram.com/notjustapotato/">Instagram</a>
+            </nav>
+            <span class="footer-copy">© 2026 Krijstelle</span>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <script src="case-carousel.js"></script>
+    <script>if (window.lucide) lucide.createIcons();</script>
+  </body>
+</html>
+
